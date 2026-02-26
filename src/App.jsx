@@ -4,6 +4,7 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { flowerData } from "./data/tests/flowerData";
 import { supplementData } from "./data/tests/supplementData";
 import { deskData } from "./data/tests/deskData";
+import { interiorData } from "./data/tests/interiorData";
 
 // [교정 1] 완전 자동화된 baseName 추출
 // 주소창의 첫 번째 경로(flower, apple 등)를 자동으로 basename으로 인식합니다.
@@ -38,6 +39,7 @@ const testRegistry = {
   flower: flowerData,
   supplement: supplementData,
   desk: deskData,
+  interior: interiorData,
   // 앞으로 새로운 테스트 데이터(예: appleData)를 추가할 때 여기에 한 줄만 등록하면 끝납니다.
 };
 
