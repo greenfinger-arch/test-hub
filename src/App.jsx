@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-// [교정] Navigate 뿐만 아니라 Link를 추가하여 편의성을 높였습니다.
 import { BrowserRouter, Routes, Route, useParams, Navigate, Link } from "react-router-dom";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { flowerData } from "./data/tests/flowerData";
 import { supplementData } from "./data/tests/supplementData";
 import { deskData } from "./data/tests/deskData";
 
-// [교정 1] 정교한 baseName 추출 (flower일 때만 basename으로 인정)
+// [교정 1] 정교한 baseName 추출
 const pathSegments = window.location.pathname.split('/');
 const baseName = pathSegments[1] === 'flower' ? '/flower' : '';
 
@@ -38,6 +37,13 @@ const testRegistry = {
   flower: flowerData,
   supplement: supplementData,
   desk: deskData,
+};
+
+// [교정 2] 특정 ID를 강제로 주입하여 즉시 렌더링하는 컴포넌트
+const TestEngineDirect = ({ id }) => {
+  const data = testRegistry[id];
+  if (!data) return <Wrapper><Card>존재하지 않는 테스트입니다.</Card></Wrapper>;
+  return <TestManager data={data} />;
 };
 
 const TestEngine = () => {
@@ -135,7 +141,7 @@ const TestManager = ({ data }) => {
   );
 };
 
-// --- 스타일 컴포넌트 ---
+// --- 스타일 컴포넌트 (기존 유지) ---
 const Wrapper = styled.div` display: flex; justify-content: center; align-items: center; width: 100vw; min-height: 100vh; padding: 20px; background-color: #f8f9fa; `;
 const Card = styled.div` background: white; width: 100%; max-width: 440px; padding: 30px 25px 40px; border-radius: 28px; box-shadow: 0 15px 45px rgba(0,0,0,0.07); text-align: center; border: 1px solid #eee; display: flex; flex-direction: column; align-items: center; `;
 const BrandLogo = styled.img` width: 70px; height: auto; margin-bottom: 15px; `;
@@ -160,24 +166,19 @@ const LoadingText = styled.p` font-size: 1.05rem; color: #666; line-height: 1.6;
 const ResultName = styled.h2` font-size: 1.8rem; color: #228be6; margin: 10px 0 15px; `;
 const ResultDesc = styled.div` background: #f8f9fa; padding: 22px; border-radius: 18px; color: #444; line-height: 1.7; font-size: 0.95rem; margin-bottom: 25px; text-align: left; border-left: 5px solid #228be6; `;
 
-// [교정 2] App 함수 내부: basename 적용 및 메인 화면 링크 추가
+// [교정 3] App 컴포넌트: 접속 즉시 flower 테스트가 뜨도록 path="/"를 수정
 function App() {
   return (
     <BrowserRouter basename={baseName}>
       <GlobalStyle />
       <Routes>
-        <Route path="/" element={
-          <div style={{ padding: '50px', textAlign: 'center' }}>
-            <h1>테스트 센터에 오신 것을 환영합니다!</h1>
-            <p>감지된 기본 경로: <strong>{baseName || 'Root'}</strong></p>
-            <Link to="/test/flower" style={{ color: '#228be6', textDecoration: 'underline' }}>
-               꽃 테스트 페이지로 이동하기
-            </Link>
-          </div>
-        } />
+        {/* 루트 접속 시 바로 꽃 테스트가 나타납니다 */}
+        <Route path="/" element={<TestEngineDirect id="flower" />} />
         
+        {/* 기존의 /test/flower 경로도 정상 작동합니다 */}
         <Route path="/test/:testId" element={<TestEngine />} />
 
+        {/* 잘못된 경로는 모두 메인(꽃 테스트 시작화면)으로 보냅니다 */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
