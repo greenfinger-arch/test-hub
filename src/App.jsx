@@ -5,7 +5,7 @@ import { flowerData } from "./data/tests/flowerData";
 import { supplementData } from "./data/tests/supplementData";
 import { deskData } from "./data/tests/deskData";
 import { interiorData } from "./data/tests/interiorData";
-import { interiorData } from "./data/tests/officeData";
+import { officeData } from "./data/tests/officeData";
 
 // [교정 1] 완전 자동화된 baseName 추출
 // 주소창의 첫 번째 경로(flower, apple 등)를 자동으로 basename으로 인식합니다.
