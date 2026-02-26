@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams Navigate } from "react-router-dom";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { flowerData } from "./data/tests/flowerData";
 import { supplementData } from "./data/tests/supplementData";
@@ -162,11 +162,23 @@ const ResultDesc = styled.div` background: #f8f9fa; padding: 22px; border-radius
 
 // [교정 3] App 컴포넌트에서 baseName을 정상적으로 사용할 수 있도록 위치 수정됨
 function App() {
-  return (
+return (
     <BrowserRouter basename={baseName ? `/${baseName}` : '/'}>
       <GlobalStyle />
       <Routes>
+        {/* [추가] /flower/ 로 접속했을 때 보여줄 기본 화면 */}
+        <Route path="/" element={
+          <div style={{ padding: '50px', textAlign: 'center' }}>
+            <h1>테스트 센터에 오신 것을 환영합니다!</h1>
+            <p>주소창 뒤에 /test/flower 를 붙여보세요.</p>
+          </div>
+        } />
+        
+        {/* 기존 테스트 경로 */}
         <Route path="/test/:testId" element={<TestEngine />} />
+
+        {/* [추가] 정의되지 않은 모든 주소는 메인(/)으로 보냄 */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
