@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, useParams, Navigate } from "react-router-dom";
+// [교정] Navigate 뿐만 아니라 Link를 추가하여 편의성을 높였습니다.
+import { BrowserRouter, Routes, Route, useParams, Navigate, Link } from "react-router-dom";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { flowerData } from "./data/tests/flowerData";
 import { supplementData } from "./data/tests/supplementData";
 import { deskData } from "./data/tests/deskData";
 
-// [교정 1] baseName 선언 위치를 모든 함수 바깥 상단으로 이동
-const baseName = window.location.pathname.split('/')[1];
+// [교정 1] 정교한 baseName 추출 (flower일 때만 basename으로 인정)
+const pathSegments = window.location.pathname.split('/');
+const baseName = pathSegments[1] === 'flower' ? '/flower' : '';
 
 // 1. 전역 스타일 설정
 const GlobalStyle = createGlobalStyle`
@@ -48,7 +50,7 @@ const TestEngine = () => {
 };
 
 const TestManager = ({ data }) => {
-  const [step, setStep] = useState(0); // 0: 시작, 1: 질문, 2: 로딩, 3: 결과
+  const [step, setStep] = useState(0); 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState({});
 
@@ -69,8 +71,6 @@ const TestManager = ({ data }) => {
   };
 
   const result = step === 3 ? getResult() : null;
-
-  // [교정 2] TestManager 내부에 있던 baseName 선언 삭제 (상단으로 옮겼으므로)
 
   return (
     <Wrapper>
@@ -160,24 +160,24 @@ const LoadingText = styled.p` font-size: 1.05rem; color: #666; line-height: 1.6;
 const ResultName = styled.h2` font-size: 1.8rem; color: #228be6; margin: 10px 0 15px; `;
 const ResultDesc = styled.div` background: #f8f9fa; padding: 22px; border-radius: 18px; color: #444; line-height: 1.7; font-size: 0.95rem; margin-bottom: 25px; text-align: left; border-left: 5px solid #228be6; `;
 
-// [교정 3] App 컴포넌트에서 baseName을 정상적으로 사용할 수 있도록 위치 수정됨
+// [교정 2] App 함수 내부: basename 적용 및 메인 화면 링크 추가
 function App() {
-return (
-    <BrowserRouter basename={baseName ? `/${baseName}` : '/'}>
+  return (
+    <BrowserRouter basename={baseName}>
       <GlobalStyle />
       <Routes>
-        {/* [추가] /flower/ 로 접속했을 때 보여줄 기본 화면 */}
         <Route path="/" element={
           <div style={{ padding: '50px', textAlign: 'center' }}>
             <h1>테스트 센터에 오신 것을 환영합니다!</h1>
-            <p>주소창 뒤에 /test/flower 를 붙여보세요.</p>
+            <p>감지된 기본 경로: <strong>{baseName || 'Root'}</strong></p>
+            <Link to="/test/flower" style={{ color: '#228be6', textDecoration: 'underline' }}>
+               꽃 테스트 페이지로 이동하기
+            </Link>
           </div>
         } />
         
-        {/* 기존 테스트 경로 */}
         <Route path="/test/:testId" element={<TestEngine />} />
 
-        {/* [추가] 정의되지 않은 모든 주소는 메인(/)으로 보냄 */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
