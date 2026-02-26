@@ -9,6 +9,7 @@ import { officeData } from "./data/tests/officeData";
 import { spendingData } from "./data/tests/spendingData";
 import { blacklistData } from "./data/tests/blacklistData";
 import { sleepData } from "./data/tests/sleepData";
+import { survivalData } from "./data/tests/survivalData";
 
 const pathSegments = window.location.pathname.split('/');
 const baseName = pathSegments[1] && !pathSegments[1].includes('.') ? `/${pathSegments[1]}` : '';
@@ -35,6 +36,7 @@ const testRegistry = {
   office: officeData,
   spending: spendingData,
   sleep: sleepData,
+  survival: survivalData,
 };
 
 const AutoTestLoader = () => {
