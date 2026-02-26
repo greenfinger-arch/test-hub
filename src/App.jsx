@@ -7,6 +7,7 @@ import { deskData } from "./data/tests/deskData";
 import { interiorData } from "./data/tests/interiorData";
 import { officeData } from "./data/tests/officeData";
 import { spendingData } from "./data/tests/spendingData";
+import { blacklistData } from "./data/tests/blacklistData";
 
 const pathSegments = window.location.pathname.split('/');
 const baseName = pathSegments[1] && !pathSegments[1].includes('.') ? `/${pathSegments[1]}` : '';
