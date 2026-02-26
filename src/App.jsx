@@ -69,6 +69,10 @@ const TestManager = ({ data }) => {
 
   const result = step === 3 ? getResult() : null;
 
+   // 1. 현재 주소창에서 첫 번째 경로(예: flower)를 자동으로 추출합니다.
+  // play.com/flower/ -> "flower" 추출
+  const baseName = window.location.pathname.split('/')[1];
+
   return (
     <Wrapper>
       <Card>
@@ -237,10 +241,12 @@ const ResultDesc = styled.div`
 `;
 
 function App() {
-  return (
-    <BrowserRouter>
+return (
+    // basename을 추가하고, 기존 BrowserRouter를 유지합니다.
+    <BrowserRouter basename={baseName ? `/${baseName}` : '/'}>
       <GlobalStyle />
       <Routes>
+        {/* 이제 /flower/test/123 주소로 접속하면 이 라우트가 잡힙니다 */}
         <Route path="/test/:testId" element={<TestEngine />} />
       </Routes>
     </BrowserRouter>
