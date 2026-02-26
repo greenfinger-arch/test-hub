@@ -5,9 +5,10 @@ import { flowerData } from "./data/tests/flowerData";
 import { supplementData } from "./data/tests/supplementData";
 import { deskData } from "./data/tests/deskData";
 
-// [교정 1] 정교한 baseName 추출
+// [교정 1] 완전 자동화된 baseName 추출
+// 주소창의 첫 번째 경로(flower, apple 등)를 자동으로 basename으로 인식합니다.
 const pathSegments = window.location.pathname.split('/');
-const baseName = pathSegments[1] === 'flower' ? '/flower' : '';
+const baseName = pathSegments[1] && !pathSegments[1].includes('.') ? `/${pathSegments[1]}` : '';
 
 // 1. 전역 스타일 설정
 const GlobalStyle = createGlobalStyle`
@@ -37,12 +38,17 @@ const testRegistry = {
   flower: flowerData,
   supplement: supplementData,
   desk: deskData,
+  // 앞으로 새로운 테스트 데이터(예: appleData)를 추가할 때 여기에 한 줄만 등록하면 끝납니다.
 };
 
-// [교정 2] 특정 ID를 강제로 주입하여 즉시 렌더링하는 컴포넌트
-const TestEngineDirect = ({ id }) => {
-  const data = testRegistry[id];
-  if (!data) return <Wrapper><Card>존재하지 않는 테스트입니다.</Card></Wrapper>;
+// [교정 2] 현재 접속한 경로(basename)를 분석하여 해당 데이터를 즉시 로드하는 컴포넌트
+const AutoTestLoader = () => {
+  const currentId = baseName.replace('/', '');
+  const data = testRegistry[currentId];
+
+  // 데이터가 없으면 안내 문구를 띄웁니다.
+  if (!data) return <Wrapper><Card>테스트 데이터를 찾을 수 없습니다.<br/>(ID: {currentId})</Card></Wrapper>;
+  
   return <TestManager data={data} />;
 };
 
@@ -141,7 +147,7 @@ const TestManager = ({ data }) => {
   );
 };
 
-// --- 스타일 컴포넌트 (기존 유지) ---
+// --- 스타일 컴포넌트 ---
 const Wrapper = styled.div` display: flex; justify-content: center; align-items: center; width: 100vw; min-height: 100vh; padding: 20px; background-color: #f8f9fa; `;
 const Card = styled.div` background: white; width: 100%; max-width: 440px; padding: 30px 25px 40px; border-radius: 28px; box-shadow: 0 15px 45px rgba(0,0,0,0.07); text-align: center; border: 1px solid #eee; display: flex; flex-direction: column; align-items: center; `;
 const BrandLogo = styled.img` width: 70px; height: auto; margin-bottom: 15px; `;
@@ -166,19 +172,19 @@ const LoadingText = styled.p` font-size: 1.05rem; color: #666; line-height: 1.6;
 const ResultName = styled.h2` font-size: 1.8rem; color: #228be6; margin: 10px 0 15px; `;
 const ResultDesc = styled.div` background: #f8f9fa; padding: 22px; border-radius: 18px; color: #444; line-height: 1.7; font-size: 0.95rem; margin-bottom: 25px; text-align: left; border-left: 5px solid #228be6; `;
 
-// [교정 3] App 컴포넌트: 접속 즉시 flower 테스트가 뜨도록 path="/"를 수정
+// [교정 3] 최종 Route 구성
 function App() {
   return (
     <BrowserRouter basename={baseName}>
       <GlobalStyle />
       <Routes>
-        {/* 루트 접속 시 바로 꽃 테스트가 나타납니다 */}
-        <Route path="/" element={<TestEngineDirect id="flower" />} />
+        {/* 이제 접속한 경로에 맞는 테스트를 자동으로 로드합니다. */}
+        <Route path="/" element={<AutoTestLoader />} />
         
-        {/* 기존의 /test/flower 경로도 정상 작동합니다 */}
+        {/* 직접적인 /test/:testId 접근도 여전히 지원합니다. */}
         <Route path="/test/:testId" element={<TestEngine />} />
 
-        {/* 잘못된 경로는 모두 메인(꽃 테스트 시작화면)으로 보냅니다 */}
+        {/* 그 외 모든 경로는 메인으로 보냅니다. */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
