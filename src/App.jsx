@@ -76,7 +76,7 @@ const testRegistry = {
   letterFromFuture: letterFromFutureData,
   bucketList: bucketListData,
   recoveryCode: recoveryCodeData,
-  myNorthStarmy: NorthStarData,
+  myNorthStar: NorthStarData,
   blessingDay: blessingDayData,
   seasonOfLove: seasonOfLoveData,
   weirdSuperpower: weirdSuperpowerData,
