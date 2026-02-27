@@ -23,7 +23,9 @@ import { pastLifeData } from "./data/tests/pastLifeData";
 import { interiorSoulmateData } from "./data/tests/interiorSoulmateData";
 import { dopamineData } from "./data/tests/dopamineData";
 import { moneyAnimalData } from "./data/tests/moneyAnimalData";
+import { myCafeData } from "./data/tests/myCafeData";
 import { salaryLupinData } from "./data/tests/salaryLupinData";
+import { outerInnerData } from "./data/tests/outerInnerData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -59,6 +61,7 @@ const testRegistry = {
   moneyAnimal: moneyAnimalData,
   myCafe: myCafeData,
   salaryLupin: salaryLupinData,
+  outerInner: outerInnerData,
 };
 
 // 2. 메인 페이지 컴포넌트
