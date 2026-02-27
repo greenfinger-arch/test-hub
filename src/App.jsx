@@ -16,7 +16,7 @@ import { soulFoodData } from "./data/tests/soulFoodData";
 
 // [설정] 베이스네임 자동 추출
 const pathSegments = window.location.pathname.split('/');
-const baseName = pathSegments[1] && !pathSegments[1].includes('.') ? `/${pathSegments[1]}` : '';
+const baseName = "";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
