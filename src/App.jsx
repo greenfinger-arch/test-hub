@@ -19,6 +19,7 @@ import { sleepData } from "./data/tests/sleepData";
 import { survivalData } from "./data/tests/survivalData";
 import { soulFoodData } from "./data/tests/soulFoodData";
 import { villainData } from "./data/tests/villainData";
+import { pastLifeData } from "./data/tests/pastLifeData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -48,6 +49,7 @@ const testRegistry = {
   flower: flowerData,
   supplement: supplementData,
   villain: villainData,
+  pastLife: pastLifeData,
 };
 
 // 2. 메인 페이지 컴포넌트
