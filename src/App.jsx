@@ -76,14 +76,15 @@ const MainGallery = () => {
 
 // 3. 페이지 로더 로직
 const AutoTestLoader = () => {
-  const currentId = baseName.replace('/', '');
+  // window.location을 직접 뜯는 대신, URL 파라미터를 활용하거나 직접 경로를 확인합니다.
+  const path = window.location.pathname.replace(/^\/|\/$/g, ''); // 앞뒤 슬래시 제거
   
-  // 메인 페이지인 경우
-  if (!currentId) return <MainGallery />;
+  // 1. 경로가 없으면 메인 갤러리
+  if (!path) return <MainGallery />;
 
-  // 개별 테스트 페이지인 경우
-  const data = testRegistry[currentId];
-  if (!data) return <Wrapper><Card>데이터를 찾을 수 없습니다.<br/>(ID: {currentId})</Card></Wrapper>;
+  // 2. 경로가 있으면 테스트 데이터 확인
+  const data = testRegistry[path];
+  if (!data) return <MainGallery />; // 데이터 없으면 메인으로 보내기
   
   return <TestManager data={data} />;
 };
@@ -211,10 +212,12 @@ const ResultDesc = styled.div` background: #f8f9fa; padding: 22px; border-radius
 
 function App() {
   return (
-    <BrowserRouter basename={baseName}>
+<BrowserRouter> 
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<AutoTestLoader />} />
+        {/* /test/:testId 경로 대신, 모든 경로나 특정 경로를 처리하도록 구성 */}
+        <Route path="/:testId" element={<AutoTestLoader />} /> 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
