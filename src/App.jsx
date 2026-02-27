@@ -30,7 +30,6 @@ import { fantasyJobData } from "./data/tests/fantasyJobData";
 import { letterFromFutureData } from "./data/tests/letterFromFutureData";
 import { bucketListData } from "./data/tests/bucketListData";
 import { recoveryCodeData } from "./data/tests/recoveryCodeData";
-import { myNorthStarData } from "./data/tests/myNorthStarData";
 import { blessingDayData } from "./data/tests/blessingDayData";
 import { seasonOfLoveData } from "./data/tests/seasonOfLoveData";
 import { weirdSuperpowerData } from "./data/tests/weirdSuperpowerData";
@@ -80,7 +79,6 @@ const testRegistry = {
   letterFromFuture: letterFromFutureData,
   bucketList: bucketListData,
   recoveryCode: recoveryCodeData,
-  myNorthStar: myNorthStarData,
   blessingDay: blessingDayData,
   seasonOfLove: seasonOfLoveData,
   weirdSuperpower: weirdSuperpowerData,
