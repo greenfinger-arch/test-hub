@@ -18,6 +18,7 @@ import { blacklistData } from "./data/tests/blacklistData";
 import { sleepData } from "./data/tests/sleepData";
 import { survivalData } from "./data/tests/survivalData";
 import { soulFoodData } from "./data/tests/soulFoodData";
+import { villainData } from "./data/tests/villainData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -46,6 +47,7 @@ const testRegistry = {
   desk: deskData,
   flower: flowerData,
   supplement: supplementData,
+  villain: villainData,
 };
 
 // 2. 메인 페이지 컴포넌트
