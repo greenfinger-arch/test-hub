@@ -29,6 +29,13 @@ import { outerInnerData } from "./data/tests/outerInnerData";
 import { fantasyJobData } from "./data/tests/fantasyJobData";
 import { letterFromFutureData } from "./data/tests/letterFromFutureData";
 import { bucketListData } from "./data/tests/bucketListData";
+import { recoveryCodeData } from "./data/tests/recoveryCodeData";
+import { myNorthStarData } from "./data/tests/myNorthStarData";
+import { blessingDayData } from "./data/tests/blessingDayData";
+import { seasonOfLoveData } from "./data/tests/seasonOfLoveData";
+import { weirdSuperpowerData } from "./data/tests/weirdSuperpowerData";
+import { reincarnatedFoodData } from "./data/tests/reincarnatedFoodData";
+import { cafeFaceData } from "./data/tests/cafeFaceData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -68,6 +75,13 @@ const testRegistry = {
   fantasyJob: fantasyJobData,
   letterFromFuture: letterFromFutureData,
   bucketList: bucketListData,
+  recoveryCode: recoveryCodeData,
+  myNorthStarmy: NorthStarData,
+  blessingDay: blessingDayData,
+  seasonOfLove: seasonOfLoveData,
+  weirdSuperpower: weirdSuperpowerData,
+  reincarnatedFood: reincarnatedFoodData,
+  cafeFace: cafeFaceData,
 };
 
 // 2. 메인 페이지 컴포넌트
