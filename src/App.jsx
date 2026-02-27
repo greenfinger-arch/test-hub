@@ -27,6 +27,7 @@ import { myCafeData } from "./data/tests/myCafeData";
 import { salaryLupinData } from "./data/tests/salaryLupinData";
 import { outerInnerData } from "./data/tests/outerInnerData";
 import { fantasyJobData } from "./data/tests/fantasyJobData";
+import { letterFromFutureData } from "./data/tests/letterFromFutureData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -64,6 +65,7 @@ const testRegistry = {
   salaryLupin: salaryLupinData,
   outerInner: outerInnerData,
   fantasyJob: fantasyJobData,
+  letterFromFuture: letterFromFutureData,
 };
 
 // 2. 메인 페이지 컴포넌트
