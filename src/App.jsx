@@ -21,6 +21,7 @@ import { soulFoodData } from "./data/tests/soulFoodData";
 import { villainData } from "./data/tests/villainData";
 import { pastLifeData } from "./data/tests/pastLifeData";
 import { interiorSoulmateData } from "./data/tests/interiorSoulmateData";
+import { dopamineData } from "./data/tests/dopamineData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -52,6 +53,7 @@ const testRegistry = {
   villain: villainData,
   pastLife: pastLifeData,
   interiorSoulmate: interiorSoulmateData,
+  dopamine: dopamineData,
 };
 
 // 2. 메인 페이지 컴포넌트
