@@ -28,6 +28,7 @@ import { salaryLupinData } from "./data/tests/salaryLupinData";
 import { outerInnerData } from "./data/tests/outerInnerData";
 import { fantasyJobData } from "./data/tests/fantasyJobData";
 import { letterFromFutureData } from "./data/tests/letterFromFutureData";
+import { bucketListData } from "./data/tests/bucketListData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -66,6 +67,7 @@ const testRegistry = {
   outerInner: outerInnerData,
   fantasyJob: fantasyJobData,
   letterFromFuture: letterFromFutureData,
+  bucketList: bucketListData,
 };
 
 // 2. 메인 페이지 컴포넌트
