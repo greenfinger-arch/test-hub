@@ -54,6 +54,11 @@ import { firstPageMemoryData } from "./data/tests/firstPageMemoryData";
 import { futureSeasonsData } from "./data/tests/futureSeasonsData";
 import { tomorrowSeasonsData } from "./data/tests/tomorrowSeasonsData";
 import { joseonIDTest } from "./data/tests/joseonIDTest";
+import { lottoFriendshipData } from "./data/tests/lottoFriendshipData";
+import { friendVillainTest } from "./data/tests/friendVillainTest";
+import { secretHideoutData } from "./data/tests/secretHideoutData";
+import { mentalWeatherData } from "./data/tests/mentalWeatherData";
+import { dailyVitaminData } from "./data/tests/dailyVitaminData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -118,6 +123,11 @@ const testRegistry = {
   futureSeasons: futureSeasonsData,
   tomorrowSeasons: tomorrowSeasonsData,
   joseonIDTest: joseonIDTest,
+  lottoFriendship: lottoFriendshipData,
+  friendVillainTest: friendVillainTest,
+  secretHideout: secretHideoutData,
+  mentalWeather: mentalWeatherData,
+  dailyVitamin: dailyVitaminData,
 };
 
 // 2. 메인 페이지 컴포넌트
