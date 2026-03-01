@@ -39,6 +39,14 @@ import { cafeAndDessertFullSet } from "./data/tests/cafeAndDessertFullSet";
 import { personalPastelData } from "./data/tests/personalPastelData";
 import { guardianPlantData } from "./data/tests/guardianPlantData";
 import { atticRomanceData } from "./data/tests/atticRomanceData";
+import { romanceFantasyData } from "./data/tests/romanceFantasyData";
+import { loveVillainData } from "./data/tests/loveVillainData";
+import { loveTemperatureData } from "./data/tests/loveTemperatureData";
+import { zombieSurvivalData } from "./data/tests/zombieSurvivalData";
+import { pastLifeKarmaData } from "./data/tests/pastLifeKarmaData";
+import { loveMoodLightData } from "./data/tests/loveMoodLightData";
+import { desertIslandSurvivalData } from "./data/tests/desertIslandSurvivalData";
+import { loveJinSangData } from "./data/tests/loveJinSangData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -88,6 +96,14 @@ const testRegistry = {
   personalPastel: personalPastelData,
   guardianPlant: guardianPlantData,
   atticRomance: atticRomanceData,
+  romanceFantasy: romanceFantasyData,
+  loveVillain: loveVillainData,
+  loveTemperature: loveTemperatureData,
+  zombieSurvival: zombieSurvivalData,
+  pastLifeKarma: pastLifeKarmaData,
+  loveMoodLight: loveMoodLightData,
+  desertIslandSurvival: desertIslandSurvivalData,
+  loveJinSang: loveJinSangData,
 };
 
 // 2. 메인 페이지 컴포넌트
