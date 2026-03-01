@@ -47,6 +47,13 @@ import { pastLifeKarmaData } from "./data/tests/pastLifeKarmaData";
 import { loveMoodLightData } from "./data/tests/loveMoodLightData";
 import { desertIslandSurvivalData } from "./data/tests/desertIslandSurvivalData";
 import { loveJinSangData } from "./data/tests/loveJinSangData";
+import { marriedCouplesNightData } from "./data/tests/marriedCouplesNightData";
+import { coupleReincarnationData } from "./data/tests/coupleReincarnationData";
+import { homeHierarchyData } from "./data/tests/homeHierarchyData";
+import { firstPageMemoryData } from "./data/tests/firstPageMemoryData";
+import { futureSeasonsData } from "./data/tests/futureSeasonsData";
+import { tomorrowSeasonsData } from "./data/tests/tomorrowSeasonsData";
+import { joseonIDTest } from "./data/tests/joseonIDTest";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -104,6 +111,13 @@ const testRegistry = {
   loveMoodLight: loveMoodLightData,
   desertIslandSurvival: desertIslandSurvivalData,
   loveJinSang: loveJinSangData,
+  marriedCouplesNight: marriedCouplesNightData,
+  coupleReincarnation: coupleReincarnationData,
+  homeHierarchy: homeHierarchyData,
+  firstPageMemory: firstPageMemoryData,
+  futureSeasons: futureSeasonsData,
+  tomorrowSeasons: tomorrowSeasonsData,
+  joseonIDTest: joseonIDTest,
 };
 
 // 2. 메인 페이지 컴포넌트
