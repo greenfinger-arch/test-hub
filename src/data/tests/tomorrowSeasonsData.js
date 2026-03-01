@@ -1,5 +1,5 @@
 export const tomorrowSeasonsData = {
-  title: "우리가 함께 그리는 '내일의 계절': 당신과 걷고 싶은 길",
+  title: "우리가 함께 그리는 '당신과 걷고 싶은 길'",
   subTitle: "먼 훗날, 우리 곁에는 어떤 바람이 불고 있을까요?",
   mainImg: "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800", // 평화로운 지평선이나 함께 걷는 뒷모습
   questions: [
