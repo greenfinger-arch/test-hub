@@ -35,7 +35,7 @@ import { seasonOfLoveData } from "./data/tests/seasonOfLoveData";
 import { weirdSuperpowerData } from "./data/tests/weirdSuperpowerData";
 import { reincarnatedFoodData } from "./data/tests/reincarnatedFoodData";
 import { cafeFaceData } from "./data/tests/cafeFaceData";
-import { cafeAndDessertFullSetData } from "./data/tests/cafeAndDessertFullSetData";
+import { cafeAndDessertFullSet } from "./data/tests/cafeAndDessertFullSet";
 import { personalPastelData } from "./data/tests/personalPastelData";
 import { guardianPlantData } from "./data/tests/guardianPlantData";
 import { atticRomanceData } from "./data/tests/atticRomanceData";
@@ -84,7 +84,7 @@ const testRegistry = {
   weirdSuperpower: weirdSuperpowerData,
   reincarnatedFood: reincarnatedFoodData,
   cafeFace: cafeFaceData,
-  cafeAndDessertFullSet: cafeAndDessertFullSetData,
+  cafeAndDessertFullSet: cafeAndDessertFullSet,
   personalPastel: personalPastelData,
   guardianPlant: guardianPlantData,
   atticRomance: atticRomanceData,
