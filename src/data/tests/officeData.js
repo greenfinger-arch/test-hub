@@ -65,21 +65,21 @@ export const officeData = {
       desc: "불필요한 감정 소모는 사치! 날카로운 논리와 이성으로 무장한 당신은 효율성을 극대화하는 빌런(혹은 다크히어로)입니다. 때로는 차가워 보이지만, 당신만큼 일을 확실하게 끝내는 사람도 없죠. 조금만 부드러워진다면 무적의 리더가 될 거예요.",
       img: "/images/office02.jpg",
       ctaText: "💣 팩폭 주의! 스트레스 해소용 장난감 보기",
-      affiliateLink: "https://play.ranklamp.com/office-villain"
+      affiliateLink: "https://link.coupang.com/a/dVCpSC"
     },
     SPEED: {
       name: "불타는 열정의 '워커홀릭 플래시'",
       desc: "지연되는 일은 못 참는다! 빛보다 빠른 속도로 메신저 답장을 보내고 업무를 쳐내는 당신은 사무실의 플래시입니다. 당신의 속도를 따라오지 못하는 동료들을 보며 답답해하지 마세요. 가끔은 커피 한 잔의 여유가 필요합니다.",
       img: "/images/office03.jpg",
       ctaText: "☕ 번아웃 방지! 고카페인 캡슐 커피 추천",
-      affiliateLink: "https://play.ranklamp.com/office-speed"
+      affiliateLink: "https://link.coupang.com/a/dVCttQ"
     },
     GHOST: {
       name: "월급 루팡 꿈나무 '투명인간 로그아웃'",
       desc: "최소한의 에너지로 최대의 월급을! 당신은 업무의 바다에서 완벽하게 몸을 숨기는 은신술의 달인입니다. 시킨 일은 딱 맞게 해내지만, 그 이상은 절대 금물인 당신. 효율적인 에너지 관리 능력만큼은 세계 최고 수준이네요!",
       img: "/images/office04.jpg",
       ctaText: "👻 들키지 않게! 사무실 몰컴 필수템 보기",
-      affiliateLink: "https://play.ranklamp.com/office-ghost"
+      affiliateLink: "https://link.coupang.com/a/dVCD55"
     }
   }
 };
