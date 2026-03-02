@@ -1,5 +1,5 @@
 const survivalData = {
-  isReady: false,
+  isReady: true,
   id: "officesurvival",
   title: "직장인 생존 가이드: 나의 오피스 생존력은?",
   subTitle:
@@ -84,28 +84,28 @@ const survivalData = {
       desc: "당신은 감정에 휘둘리지 않고 업무의 핵심을 찌르는 전략가입니다. 높은 생존력과 함께 성과까지 챙기는 타입이죠. 하지만 동료들에게 너무 계산적으로 보일 수 있으니 때로는 인간미를 보여주세요!",
       img: "/images/officesurvival01.jpg",
       ctaText: "🧠 전략가의 뇌 휴식! 무선 노이즈캔슬링 헤드셋",
-      affiliateLink: "https://link.coupang.com/a/your-link1",
+      affiliateLink: "https://link.coupang.com/a/dWm7Eu",
     },
     CHAMELEON: {
       name: "분위기 마스터 '오피스 카멜레온'",
       desc: "어떤 상황, 어떤 상사를 만나도 찰떡같이 적응하는 최고의 사회성을 가졌군요! 당신이 있는 팀은 언제나 분위기가 좋습니다. 다만, 남의 비위를 맞추느라 정작 당신의 속마음이 멍들지 않게 조심하세요.",
       img: "/images/officesurvival02.jpg",
       ctaText: "🌈 카멜레온의 텐션 유지! 비타민 선물세트",
-      affiliateLink: "https://link.coupang.com/a/your-link2",
+      affiliateLink: "https://link.coupang.com/a/dWncLU",
     },
     STEALTH: {
       name: "생존 전문가 '그림자 닌자'",
       desc: "최소한의 노출로 최대의 효율을 뽑아내는 은신술의 달인입니다. 불필요한 일에 엮이지 않는 능력이 탁월하시네요. 하지만 너무 존재감이 없으면 결정적인 순간에 공로를 뺏길 수 있으니 주의하세요!",
       img: "/images/officesurvival03.jpg",
       ctaText: "🥷 닌자의 완벽한 은신! 모니터 보안 필름",
-      affiliateLink: "https://link.coupang.com/a/your-link3",
+      affiliateLink: "https://link.coupang.com/a/dWnhL8",
     },
     CACTUS: {
       name: "외유내강 '사무실의 선인장'",
       desc: "거친 환경에서도 묵묵히 제자리를 지키는 인내심의 끝판왕! 당신은 팀의 든든한 버팀목입니다. 겉으론 가시를 세우고 있어도 속은 누구보다 따뜻하군요. 가끔은 당신의 가시를 내려놓고 편히 쉴 곳을 찾아보세요.",
       img: "/images/officesurvival04.jpg",
       ctaText: "🌵 선인장의 힐링! 데스크 테리어 미니 화분",
-      affiliateLink: "https://link.coupang.com/a/your-link4",
+      affiliateLink: "https://link.coupang.com/a/dWnql0",
     },
   },
 };
