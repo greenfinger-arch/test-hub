@@ -1,4 +1,5 @@
 export const pastLifeData = {
+  isReady: false,
   title: "나의 전생 직업과 현생의 웬수",
   subTitle: "어쩐지 처음부터 킹받더라니.. 우리 무슨 사이였니?",
   mainImg: "https://images.unsplash.com/photo-1533613220915-609f661a6fe1?w=800", // 빈티지하고 신비로운 이미지

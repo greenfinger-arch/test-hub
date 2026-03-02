@@ -1,4 +1,5 @@
 export const loveVillainData = {
+  isReady: false,
   title: "나의 '연애 빌런' 지수: 혹시 나도 답정너?",
   subTitle: "사랑이라는 이름으로 저지르는 당신의 귀여운(?) 범죄 보고서",
   mainImg: "https://images.unsplash.com/photo-1516589174422-b7569bc56184?w=800", // 장난스러운 커플이나 악마 뿔 소품 이미지

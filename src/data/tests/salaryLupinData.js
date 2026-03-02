@@ -1,4 +1,5 @@
 export const salaryLupinData = {
+  isReady: false,
   title: "나의 월급 루팡 등급 테스트",
   subTitle: "전생에 베짱이였을 확률은? 나의 은밀한 루팡 등급 확인!",
   mainImg: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800", // 커피와 노트북, 여유로운 분위기

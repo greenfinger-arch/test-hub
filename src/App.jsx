@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+  useNavigate,
 } from "react-router-dom";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 
@@ -130,8 +131,16 @@ const testRegistry = {
   dailyVitamin: dailyVitaminData,
 };
 
+// [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
+const activeTestKeys = Object.keys(testRegistry).filter(
+  (key) => testRegistry[key].isReady === true,
+);
+
 // 2. 메인 페이지 컴포넌트
 const MainGallery = () => {
+  // [추가] 리액트 라우터의 내비게이션 기능을 가져옵니다.
+  const navigate = useNavigate();
+
   return (
     <MainContainer>
       <header style={{ textAlign: "center", marginBottom: "50px" }}>
@@ -141,9 +150,19 @@ const MainGallery = () => {
       </header>
 
       <Grid>
-        {Object.keys(testRegistry).map((key) => (
-          <TestCard key={key} onClick={() => (window.location.href = `/${key}`)}>
-            <CardImg $src={testRegistry[key].mainImg || "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600"} />
+        {/* activeTestKeys만 순회하며 공개된 테스트만 노출합니다. */}
+        {activeTestKeys.map((key) => (
+          <TestCard
+            key={key}
+            // [수정] window.location.href 대신 navigate 함수를 사용합니다.
+            onClick={() => navigate(`/${key}`)}
+          >
+            <CardImg
+              $src={
+                testRegistry[key].mainImg ||
+                "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600"
+              }
+            />
             <CardBody>
               <CardTag>Premium</CardTag>
               <CardHead>{testRegistry[key].title}</CardHead>
@@ -159,15 +178,28 @@ const MainGallery = () => {
 
 // 3. 페이지 로더 로직
 const AutoTestLoader = () => {
+  // 1. 현재 접속한 경로(Path)에서 공백이나 슬래시를 제거하고 순수한 키값만 추출합니다.
   const path = window.location.pathname.replace(/^\/|\/$/g, "");
+
+  // 2. 경로가 없으면(메인 페이지면) 갤러리를 보여줍니다.
   if (!path) return <MainGallery />;
+
+  // 3. 레지스트리에서 해당 경로에 맞는 데이터를 가져옵니다.
   const data = testRegistry[path];
-  if (!data) return <MainGallery />;
+
+  // 4. [핵심 수정] 데이터가 아예 없거나(존재하지 않는 주소),
+  //    데이터는 있지만 isReady가 true가 아니라면(작업 중) 메인으로 리다이렉트합니다.
+  if (!data || data.isReady !== true) {
+    return <Navigate to="/" replace />;
+  }
+
+  // 5. 모든 검문을 통과했다면(데이터가 있고 준비됨) 테스트 화면을 보여줍니다.
   return <TestManager data={data} />;
 };
 
 // 4. 테스트 엔진
 const TestManager = ({ data }) => {
+  const navigate = useNavigate(); // [추가] 이 줄을 추가합니다.
   const [step, setStep] = useState(0);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState({});
@@ -183,7 +215,9 @@ const TestManager = ({ data }) => {
   };
 
   const getResult = () => {
-    const winner = Object.keys(score).reduce((a, b) => score[a] > score[b] ? a : b);
+    const winner = Object.keys(score).reduce((a, b) =>
+      score[a] > score[b] ? a : b,
+    );
     return data.results[winner];
   };
 
@@ -199,7 +233,9 @@ const TestManager = ({ data }) => {
         await navigator.clipboard.writeText(window.location.href);
         alert("링크가 복사되었습니다!");
       }
-    } catch (err) { console.log(err); }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const result = step === 3 ? getResult() : null;
@@ -211,16 +247,20 @@ const TestManager = ({ data }) => {
           <FadeContainer>
             <Badge>Personal Curation</Badge>
             <Title>{data.title}</Title>
-            <SubTitle style={{ marginBottom: "20px" }}>{data.subTitle}</SubTitle>
+            <SubTitle style={{ marginBottom: "20px" }}>
+              {data.subTitle}
+            </SubTitle>
             {data.mainImg && <MainBanner src={data.mainImg} alt="main" />}
             <MainButton onClick={() => setStep(1)}>테스트 시작하기</MainButton>
           </FadeContainer>
         )}
-        
+
         {step === 1 && (
           <FadeContainer key={currentIdx}>
             <ProgressOuter>
-              <ProgressInner $width={(currentIdx / data.questions.length) * 100} />
+              <ProgressInner
+                $width={(currentIdx / data.questions.length) * 100}
+              />
             </ProgressOuter>
             <QuestionNum>Q {currentIdx + 1}</QuestionNum>
             {data.questions[currentIdx].img && (
@@ -248,21 +288,37 @@ const TestManager = ({ data }) => {
           <FadeContainer>
             <Badge>나의 맞춤 결과</Badge>
             <ResultName>{result.name}</ResultName>
-            <ContentImage src={result.img} alt="res" style={{ height: "180px" }} />
+            <ContentImage
+              src={result.img}
+              alt="res"
+              style={{ height: "180px" }}
+            />
             <ResultDesc>{result.desc}</ResultDesc>
-            
-            <AffiliateButton onClick={() => window.open(result.affiliateLink, "_blank")}>
+
+            <AffiliateButton
+              onClick={() => window.open(result.affiliateLink, "_blank")}
+            >
               {result.ctaText}
             </AffiliateButton>
-            
+
             <ShareButton onClick={handleShare}>결과 공유하기</ShareButton>
-            
+
             <ActionGroup>
-              <TextActionButton onClick={() => window.location.reload()}>
+              {/* 방법 B: 부드럽게 첫 질문으로 돌아가고 싶을 때 (추천) */}
+              <TextActionButton
+                onClick={() => {
+                  setStep(0);
+                  setCurrentIdx(0);
+                  setScore({});
+                }}
+              >
                 다시하기
               </TextActionButton>
+
               <Divider>|</Divider>
-              <TextActionButton onClick={() => (window.location.href = "/")}>
+
+              {/* [수정] 메인으로 나갈 때 깜빡임 없이 부드럽게 이동합니다. */}
+              <TextActionButton onClick={() => navigate("/")}>
                 다른 테스트 보기 →
               </TextActionButton>
             </ActionGroup>
@@ -274,55 +330,253 @@ const TestManager = ({ data }) => {
 };
 
 // --- 스타일 컴포넌트 ---
-const MainContainer = styled.div` width: 100%; max-width: 1200px; margin: 0 auto; padding: 60px 20px; animation: ${fadeIn} 0.8s ease-out; `;
-const MainTitle = styled.h1` font-size: 2.5rem; font-weight: 900; margin: 10px 0; color: #111; `;
-const Grid = styled.div` display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; `;
-const TestCard = styled.div` background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; cursor: pointer; border: 1px solid #eee; &:hover { transform: translateY(-8px); border-color: #228be6; } `;
-const CardImg = styled.div` width: 100%; height: 180px; background: #f1f3f5 url(${(props) => props.$src}) no-repeat center; background-size: cover; `;
-const CardBody = styled.div` padding: 20px; text-align: left; `;
-const CardTag = styled.div` color: #228be6; font-size: 0.7rem; font-weight: 800; margin-bottom: 6px; `;
-const CardHead = styled.h3` margin: 0 0 8px; font-size: 1.2rem; color: #111; `;
-const CardDesc = styled.p` margin: 0; color: #777; font-size: 0.85rem; line-height: 1.5; `;
-const Footer = styled.footer` margin-top: 80px; text-align: center; color: #adb5bd; font-size: 0.85rem; `;
+const MainContainer = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  animation: ${fadeIn} 0.8s ease-out;
+`;
+const MainTitle = styled.h1`
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 10px 0;
+  color: #111;
+`;
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+`;
+const TestCard = styled.div`
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #eee;
+  &:hover {
+    transform: translateY(-8px);
+    border-color: #228be6;
+  }
+`;
+const CardImg = styled.div`
+  width: 100%;
+  height: 180px;
+  background: #f1f3f5 url(${(props) => props.$src}) no-repeat center;
+  background-size: cover;
+`;
+const CardBody = styled.div`
+  padding: 20px;
+  text-align: left;
+`;
+const CardTag = styled.div`
+  color: #228be6;
+  font-size: 0.7rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+`;
+const CardHead = styled.h3`
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #111;
+`;
+const CardDesc = styled.p`
+  margin: 0;
+  color: #777;
+  font-size: 0.85rem;
+  line-height: 1.5;
+`;
+const Footer = styled.footer`
+  margin-top: 80px;
+  text-align: center;
+  color: #adb5bd;
+  font-size: 0.85rem;
+`;
 
-const Wrapper = styled.div` display: flex; justify-content: center; align-items: flex-start; width: 100vw; min-height: 100vh; padding: 20px; background: #fcfcfd; `;
-const Card = styled.div` 
-  background: white; 
-  width: 100%; 
-  max-width: 420px; 
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  background: #fcfcfd;
+`;
+const Card = styled.div`
+  background: white;
+  width: 100%;
+  max-width: 420px;
   padding: 20px 20px 25px; // 상단 여백 최소화
-  border-radius: 28px; 
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06); 
-  text-align: center; 
+  border-radius: 28px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  text-align: center;
   border: 1px solid #f1f3f5;
   margin-top: 10px; // 화면 최상단에 너무 붙지 않게 살짝 띄움
 `;
 
-const FadeContainer = styled.div` width: 100%; animation: ${fadeIn} 0.5s ease-out; display: flex; flex-direction: column; align-items: center; `;
-const Badge = styled.div` background: #e7f5ff; color: #228be6; padding: 5px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: 800; `;
-const Title = styled.h1` font-size: 1.5rem; margin: 12px 0 8px; `;
-const SubTitle = styled.p` color: #666; font-size: 0.9rem; margin-bottom: 20px; `;
-const MainBanner = styled.img` width: 100%; height: 180px; object-fit: cover; border-radius: 18px; margin-bottom: 20px; `;
-const ContentImage = styled.img` width: 100%; height: 200px; object-fit: cover; border-radius: 16px; margin-bottom: 15px; `;
-const QuestionNum = styled.div` color: #228be6; font-weight: 800; font-size: 0.9rem; margin-bottom: 8px; `;
-const QuestionText = styled.h2` font-size: 1.25rem; margin-bottom: 20px; line-height: 1.4; padding: 0 10px; `;
-const ButtonGroup = styled.div` width: 100%; display: flex; flex-direction: column; gap: 8px; `;
-const AnswerButton = styled.button` width: 100%; padding: 15px; border: 1px solid #f1f3f5; border-radius: 14px; background: white; cursor: pointer; transition: 0.2s; font-size: 0.95rem; &:hover { border-color: #228be6; background: #f8fbff; } `;
-const MainButton = styled.button` width: 100%; padding: 16px; border: none; border-radius: 14px; background: #228be6; color: white; font-weight: 800; cursor: pointer; `;
-const AffiliateButton = styled(MainButton)` background: #37b24d; margin-bottom: 8px; `;
-const ShareButton = styled(MainButton)` background: white; color: #228be6; border: 1px solid #228be6; margin-bottom: 8px; `;
+const FadeContainer = styled.div`
+  width: 100%;
+  animation: ${fadeIn} 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const Badge = styled.div`
+  background: #e7f5ff;
+  color: #228be6;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 800;
+`;
+const Title = styled.h1`
+  font-size: 1.5rem;
+  margin: 12px 0 8px;
+`;
+const SubTitle = styled.p`
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+`;
+const MainBanner = styled.img`
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 20px;
+`;
+const ContentImage = styled.img`
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 15px;
+`;
+const QuestionNum = styled.div`
+  color: #228be6;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+`;
+const QuestionText = styled.h2`
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  padding: 0 10px;
+`;
+const ButtonGroup = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+const AnswerButton = styled.button`
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #f1f3f5;
+  border-radius: 14px;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.95rem;
+  &:hover {
+    border-color: #228be6;
+    background: #f8fbff;
+  }
+`;
+const MainButton = styled.button`
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  background: #228be6;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+`;
+const AffiliateButton = styled(MainButton)`
+  background: #37b24d;
+  margin-bottom: 8px;
+`;
+const ShareButton = styled(MainButton)`
+  background: white;
+  color: #228be6;
+  border: 1px solid #228be6;
+  margin-bottom: 8px;
+`;
 
-const ActionGroup = styled.div` display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 15px; padding-top: 15px; border-top: 1px dashed #eee; width: 100%; `;
-const TextActionButton = styled.button` background: none; border: none; color: #adb5bd; font-size: 0.85rem; text-decoration: underline; cursor: pointer; &:hover { color: #228be6; } `;
-const Divider = styled.span` color: #eee; font-size: 0.8rem; `;
+const ActionGroup = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #eee;
+  width: 100%;
+`;
+const TextActionButton = styled.button`
+  background: none;
+  border: none;
+  color: #adb5bd;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    color: #228be6;
+  }
+`;
+const Divider = styled.span`
+  color: #eee;
+  font-size: 0.8rem;
+`;
 
-const ProgressOuter = styled.div` width: 100%; height: 5px; background: #f1f3f5; border-radius: 10px; margin-bottom: 20px; `;
-const ProgressInner = styled.div` width: ${(props) => props.$width}%; height: 100%; background: #228be6; transition: width 0.4s; `;
-const LoadingWrapper = styled.div` padding: 40px 0; `;
-const Spinner = styled.div` width: 35px; height: 35px; border: 3px solid #f1f3f5; border-top: 3px solid #228be6; border-radius: 50%; animation: ${spin} 1s linear infinite; margin: 0 auto 15px; `;
-const LoadingText = styled.p` color: #666; font-size: 0.9rem; `;
-const ResultName = styled.h2` font-size: 1.6rem; color: #228be6; margin: 8px 0 15px; `;
-const ResultDesc = styled.div` background: #f8f9fa; padding: 16px 18px; border-radius: 18px; font-size: 0.9rem; text-align: left; line-height: 1.6; border-left: 4px solid #228be6; margin-bottom: 20px; `;
+const ProgressOuter = styled.div`
+  width: 100%;
+  height: 5px;
+  background: #f1f3f5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+`;
+const ProgressInner = styled.div`
+  width: ${(props) => props.$width}%;
+  height: 100%;
+  background: #228be6;
+  transition: width 0.4s;
+`;
+const LoadingWrapper = styled.div`
+  padding: 40px 0;
+`;
+const Spinner = styled.div`
+  width: 35px;
+  height: 35px;
+  border: 3px solid #f1f3f5;
+  border-top: 3px solid #228be6;
+  border-radius: 50%;
+  animation: ${spin} 1s linear infinite;
+  margin: 0 auto 15px;
+`;
+const LoadingText = styled.p`
+  color: #666;
+  font-size: 0.9rem;
+`;
+const ResultName = styled.h2`
+  font-size: 1.6rem;
+  color: #228be6;
+  margin: 8px 0 15px;
+`;
+const ResultDesc = styled.div`
+  background: #f8f9fa;
+  padding: 16px 18px;
+  border-radius: 18px;
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.6;
+  border-left: 4px solid #228be6;
+  margin-bottom: 20px;
+`;
 
 function App() {
   return (

@@ -1,4 +1,5 @@
 export const blacklistData = {
+  isReady: false,
   id: "blacklist",
   title: "나의 '연애 블랙리스트' 테스트",
   subTitle: "콩깍지도 못 막는다! 내가 연애할 때 절대 용납 못 하는 '극혐' 포인트와 나의 연애 성향을 분석해 드립니다.",

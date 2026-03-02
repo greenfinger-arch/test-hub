@@ -1,4 +1,5 @@
 export const survivalData = {
+  isReady: false,
   id: "survival",
   title: "나의 '위기 탈출 넘버원' 능력치 진단",
   subTitle: "갑작스러운 회식부터 마감 직전 컴퓨터 꺼짐까지! 일상의 위기 속 당신의 생존 등급은 몇 점일까요?",

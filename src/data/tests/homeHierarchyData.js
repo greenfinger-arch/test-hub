@@ -1,4 +1,5 @@
 export const homeHierarchyData = {
+  isReady: false,
   title: "집안의 진짜 실세는 누구? '우리 집 서열' 테스트",
   subTitle: "리모컨 주도권부터 외식 메뉴 결정까지, 당신의 진짜 계급은?",
   mainImg: "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=800", // 화려한 의자와 왕관 이미지

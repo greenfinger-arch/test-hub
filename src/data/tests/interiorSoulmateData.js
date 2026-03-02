@@ -1,4 +1,5 @@
 export const interiorSoulmateData = {
+  isReady: false,
   title: "침대 옆 인테리어 소울메이트",
   subTitle: "나의 라이프스타일과 딱 맞는 '침대 옆 감성템'은?",
   mainImg: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800", // 따뜻하고 포근한 침실 이미지

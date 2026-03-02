@@ -1,4 +1,5 @@
 export const cafeFaceData = {
+  isReady: false,
   title: "나의 '카페 메뉴' 관상 테스트",
   subTitle: "얼굴에 쓰여 있는 당신의 취향! 관상으로 보는 소울 메뉴",
   mainImg: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800", // 감성적인 카페 전경

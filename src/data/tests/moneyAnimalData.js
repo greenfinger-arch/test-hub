@@ -1,4 +1,5 @@
 export const moneyAnimalData = {
+  isReady: false,
   title: "나의 숨겨진 재테크 동물 관상",
   subTitle: "돈 냄새 맡는 나의 본능은 어떤 동물일까?",
   mainImg: "https://images.unsplash.com/photo-1579621970795-87f957f60017?w=800", // 황금색 돈과 관련된 세련된 이미지

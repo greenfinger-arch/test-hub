@@ -1,4 +1,5 @@
 export const villainData = {
+  isReady: false,
   title: "나의 흑화 지수 테스트",
   subTitle: "내 안의 어둠이 거대한 성취의 동력이 된다면?",
   mainImg: "https://images.unsplash.com/photo-1509248961158-e54f6934749c?w=800",

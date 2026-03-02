@@ -1,4 +1,5 @@
 export const secretHideoutData = {
+  isReady: false,
   title: "나만의 '비밀 아지트' 찾기: 영혼이 쉬어가는 곳",
   subTitle: "세상의 소음을 잠시 끄고, 당신의 영혼이 가고 싶어 하는 그곳으로.",
   mainImg: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800", // 창가에 놓인 차 한 잔과 책

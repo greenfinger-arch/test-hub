@@ -1,4 +1,5 @@
 export const mentalWeatherData = {
+  isReady: false,
   title: "당신의 '마음 날씨'는 오늘 몇 도인가요? 멘탈 기상청",
   subTitle: "비가 와도 괜찮아요. 곧 갤 거니까요. 당신의 오늘을 진단해 드립니다.",
   mainImg: "https://images.unsplash.com/photo-1514933651103-315bc5d5d051?w=800", // 구름 사이로 비치는 따스한 햇살

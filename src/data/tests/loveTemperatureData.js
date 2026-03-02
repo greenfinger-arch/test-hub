@@ -1,4 +1,5 @@
 export const loveTemperatureData = {
+  isReady: false,
   title: "우리의 '연애 온도' 테스트: 뜨거운 라떼 vs 시원한 에이드",
   subTitle: "입안을 적시는 온도처럼, 당신의 사랑은 몇 도인가요?",
   mainImg: "https://images.unsplash.com/photo-1517701550927-30cf4bb1dba5?w=800", // 김이 모락모락 나는 커피와 얼음이 가득한 음료 대비 사진

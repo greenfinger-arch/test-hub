@@ -1,4 +1,5 @@
 export const fantasyJobData = {
+  isReady: false,
   title: "만약 내가 판타지 세계에 떨어진다면?",
   subTitle: "나의 전생(혹은 현생) 재능으로 찾는 판타지 직업!",
   mainImg: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800", // 신비로운 숲과 마법 같은 분위기

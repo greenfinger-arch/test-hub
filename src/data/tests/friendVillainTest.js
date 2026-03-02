@@ -1,4 +1,5 @@
 export const friendVillainTest = {
+  isReady: false,
   title: "우리 중 '최고의 빌런'은 누구? 민폐 지수 테스트",
   subTitle: "얄밉지만 미워할 수 없는 당신, 혹시 우리 모임의 공공의 적?!",
   mainImg: "https://images.unsplash.com/photo-1594132176008-db2a4209581c?w=800", // 장난스러운 악당 가면이나 빌런 느낌 이미지

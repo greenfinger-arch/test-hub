@@ -1,4 +1,5 @@
 export const lottoFriendshipData = {
+  isReady: false,
   title: "우리가 '복권 1등' 당첨된다면? 우정의 유효기간",
   subTitle: "100억이 생긴 순간, 당신은 친구의 번호를 지울 것인가?",
   mainImg: "https://images.unsplash.com/photo-1518458028434-a23ad7365194?w=800", // 돈뭉치나 금괴 이미지

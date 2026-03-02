@@ -1,4 +1,5 @@
 export const letterFromFutureData = {
+  isReady: false,
   title: "80살의 내가 지금의 나에게 보내는 편지",
   subTitle: "먼 미래의 당신이 전하는 소중한 메시지를 확인해보세요.",
   mainImg: "https://images.unsplash.com/photo-1506784881215-d4a7915950c6?w=800", // 평화로운 노을과 벤치 이미지

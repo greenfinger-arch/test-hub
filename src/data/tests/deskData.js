@@ -1,4 +1,5 @@
 export const deskData = {
+  isReady: false,
   id: "desk",
   title: "나의 업무 성향별 '데스크테리어' 진단",
   subTitle: "당신의 작업 스타일을 분석해 업무 효율을 200% 높여줄 최적의 데스크 셋업을 제안합니다.",

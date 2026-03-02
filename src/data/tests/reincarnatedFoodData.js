@@ -1,4 +1,5 @@
 export const reincarnatedFoodData = {
+  isReady: false,
   title: "나의 전생 '음식' 테스트: 당신은 어떤 맛이었을까?",
   subTitle: "영혼의 깊은 맛을 찾아 떠나는 미식 여행, 당신의 본질은?",
   mainImg: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800", // 화려하고 먹음직스러운 만찬 이미지

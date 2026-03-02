@@ -1,4 +1,5 @@
 export const sleepData = {
+  isReady: false,
   id: "sleep",
   title: "나의 '침대 위 부캐' 진단 테스트",
   subTitle: "이불 밖은 위험해! 침대 위에서 당신은 어떤 모습인가요? 당신의 수면 스타일과 밤의 정체성을 찾아드립니다.",

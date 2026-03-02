@@ -1,4 +1,5 @@
 export const futureSeasonsData = {
+  isReady: false,
   title: "우리가 함께 그리는 '내일의 계절'",
   subTitle: "10년 뒤, 20년 뒤... 우리의 계절은 어떤 빛깔로 물들어 있을까요?",
   mainImg: "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800", // 평화로운 지평선이나 함께 걷는 뒷모습

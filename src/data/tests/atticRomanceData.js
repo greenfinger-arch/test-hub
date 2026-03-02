@@ -1,4 +1,5 @@
 export const atticRomanceData = {
+  isReady: false,
   title: "꿈꾸던 비밀기지, '나만의 다락방' 찾기",
   subTitle: "세상의 소음이 닿지 않는 곳, 당신의 영혼이 쉴 자리는 어디인가요?",
   mainImg: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800", // 따스한 빛이 드는 다락방 창가

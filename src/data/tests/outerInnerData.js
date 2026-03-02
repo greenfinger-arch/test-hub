@@ -1,4 +1,5 @@
 export const outerInnerData = {
+  isReady: false,
   title: "나의 겉바속촉 지수 테스트",
   subTitle: "남들이 보는 '나' vs 내가 아는 '나', 그 반전의 차이는?",
   mainImg: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=800", // 겉은 바삭하고 속은 부드러운 디저트 이미지

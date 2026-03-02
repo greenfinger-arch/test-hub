@@ -1,4 +1,5 @@
 export const coupleReincarnationData = {
+  isReady: false,
   title: "다시 태어나도 이 사람과? '부부 일심동체' 전생 계약서",
   subTitle: "우리가 이번 생에 부부로 만난 건, 전생의 어떤 계약 때문일까요?",
   mainImg: "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800", // 오래된 양피지나 신비로운 우주 이미지

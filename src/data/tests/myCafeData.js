@@ -1,4 +1,5 @@
 export const myCafeData = {
+  isReady: false,
   title: "퇴사 후 내가 차릴 카페는?",
   subTitle: "내 취향이 머무는 곳, 어떤 공간이 탄생할까요?",
   mainImg: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800", // 따뜻한 카페 전경

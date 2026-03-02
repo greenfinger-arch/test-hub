@@ -1,4 +1,5 @@
 export const joseonIDTest = {
+  isReady: false,
   title: "우리가 '조선시대'에 태어났다면? 신분 대잔치",
   subTitle: "저잣거리 왈패부터 영의정까지, 당신의 '찐' 신분을 공개하오!",
   mainImg: "https://images.unsplash.com/photo-1599408162449-7053e1a06708?w=800", // 전통 가옥이나 민화 풍 이미지

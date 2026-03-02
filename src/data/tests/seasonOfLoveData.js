@@ -1,4 +1,5 @@
 export const seasonOfLoveData = {
+  isReady: false,
   title: "당신은 나의 인생에서 어떤 계절이었나요?",
   subTitle: "함께 걸어온 수만 일의 시간, 우리를 닮은 계절을 찾아서",
   mainImg: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=800", // 나란히 놓인 두 켤레의 신발이나 의자

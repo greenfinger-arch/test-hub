@@ -1,4 +1,5 @@
 export const firstPageMemoryData = {
+  isReady: false,
   title: "우리의 '첫 페이지' 복원하기: 그때 그 온도 기억나?",
   subTitle: "먼지 쌓인 기억 속에서 우리가 처음 사랑에 빠진 순간을 꺼내보세요.",
   mainImg: "https://images.unsplash.com/photo-1516589174422-b7569bc56184?w=800", // 오래된 책 사이에 말린 꽃이나 흑백 사진

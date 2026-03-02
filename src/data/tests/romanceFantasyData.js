@@ -1,4 +1,5 @@
 export const romanceFantasyData = {
+  isReady: false,
   title: "만약 우리가 '로판' 주인공이라면?",
   subTitle: "당신의 숨겨진 고귀한 혈통과 치명적인 매력을 찾아보세요!",
   mainImg: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800", // 화려한 성이나 연회장 이미지

@@ -1,4 +1,5 @@
 export const guardianPlantData = {
+  isReady: false,
   title: "나를 지켜주는 초록 수호신: 반려 식물 테스트",
   subTitle: "지친 당신의 일상에 산소를 불어넣어 줄 단 하나의 초록 파트너",
   mainImg: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=800", // 울창한 숲이나 온실 이미지

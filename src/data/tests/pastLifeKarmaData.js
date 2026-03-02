@@ -1,4 +1,5 @@
 export const pastLifeKarmaData = {
+  isReady: false,
   title: "우리, 혹시 전생에 웬수였어? 전생 업보 테스트",
   subTitle: "지금의 티격태격은 우연이 아니다! 수천 년을 이어온 우리의 질긴 인연",
   mainImg: "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800", // 고대 유적이나 신비로운 안개 이미지

@@ -1,4 +1,5 @@
 export const cafeAndDessertFullSet = {
+  isReady: false,
   title: "카페 메뉴 & 디저트 관상 테스트",
   subTitle: "얼굴에 쓰여 있는 당신의 입맛! 관상으로 보는 완벽한 페어링",
   mainImg: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800", 

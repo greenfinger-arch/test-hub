@@ -1,4 +1,5 @@
 export const zombieSurvivalData = {
+  isReady: false,
   title: "우리, 좀비 사태에서 살아남을 수 있을까?",
   subTitle: "내 연인은 영웅일까, 아니면 나를 미끼로 던질 배신자일까?",
   mainImg: "https://images.unsplash.com/photo-1509248961158-e54f6934749c?w=800", // 황폐해진 도시와 안개 이미지

@@ -1,4 +1,5 @@
 export const flowerData = {
+  isReady: false,
   id: "flower",
   title: "나에게 어울리는 봄꽃 찾기",
   subTitle: "내 성향에 딱 맞는 봄맞이 추천 아이템까지 확인하세요!",

@@ -1,4 +1,5 @@
 export const dailyVitaminData = {
+  isReady: false,
   title: "나에게 건네는 '오늘의 한 문장': 영혼의 비타민",
   subTitle: "애썼던 오늘을 갈무리하고, 당신의 영혼에 한 조각 위로를 선물하세요.",
   mainImg: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800", // 평온한 숲이나 명상 이미지

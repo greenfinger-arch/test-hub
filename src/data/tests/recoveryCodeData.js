@@ -1,4 +1,5 @@
 export const recoveryCodeData = {
+  isReady: false,
   title: "넘어진 너를 일으켜 세울 마법의 주문",
   subTitle: "삶이 무겁게 느껴지는 날, 네가 다시 걸음을 뗄 수 있게 돕는 전언",
   mainImg: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800", // 묵묵히 길을 걷는 이의 뒷모습

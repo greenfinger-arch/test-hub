@@ -1,4 +1,5 @@
 export const spendingData = {
+  isReady: false,
   id: "spending",
   title: "나의 스트레스 해소 '탕진' 유형 진단",
   subTitle: "금융 치료가 시급한 당신! 스트레스를 받을 때 당신의 통장은 어떤 비명을 지르고 있을까요?",

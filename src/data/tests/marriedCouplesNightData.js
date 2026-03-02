@@ -1,4 +1,5 @@
 export const marriedCouplesNightData = {
+  isReady: false,
   title: "우리 부부의 '밤의 온도' 테스트: 불꽃 vs 난로",
   subTitle: "아이들이 잠든 뒤, 우리만의 은밀하고 뜨거운 온도를 측정해 보세요.",
   mainImg: "https://images.unsplash.com/photo-1515516089376-88db1e26e9c0?w=800", // 붉은 와인 잔과 촛불이 켜진 분위기 있는 사진

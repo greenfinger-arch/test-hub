@@ -1,4 +1,5 @@
 export const supplementData = {
+  isReady: false,
   id: "supplement",
   title: "나의 라이프스타일별 '필수 영양제' 찾기",
   subTitle: "피로도와 생활 습관을 분석하여 지금 당신에게 가장 필요한 영양 조합을 추천해 드립니다.",

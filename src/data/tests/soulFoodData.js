@@ -1,4 +1,5 @@
 export const soulFoodData = {
+  isReady: false,
   id: "soul-food",
   title: "나의 '소울 푸드' 평생권 당첨 테스트",
   subTitle: "전 세계 딱 하나의 음식만 평생 무료로 먹을 수 있다면? 당신의 성향과 입맛에 딱 맞는 인생 음식을 찾아드립니다.",

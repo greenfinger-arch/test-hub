@@ -1,4 +1,5 @@
 export const blessingDayData = {
+  isReady: false,
   title: "네가 태어난 날, 우주가 보낸 축복",
   subTitle: "너라는 기적이 우리에게 왔을 때, 온 세상은 이런 노래를 불렀단다.",
   mainImg: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800", // 아기의 작은 손을 잡은 부모의 손

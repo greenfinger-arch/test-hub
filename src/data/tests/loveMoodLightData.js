@@ -1,4 +1,5 @@
 export const loveMoodLightData = {
+  isReady: false,
   title: "나의 '연애 언어' 무드등 테스트",
   subTitle: "당신의 마음을 환하게 밝히는 사랑의 빛깔은 무엇인가요?",
   mainImg: "https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=800", // 은은한 무드등이 가득한 방 사진

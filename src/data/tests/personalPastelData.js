@@ -1,4 +1,5 @@
 export const personalPastelData = {
+  isReady: false,
   title: "나를 포근하게 감싸주는 '퍼스널 파스텔'",
   subTitle: "오늘 당신의 지친 마음을 달래줄 가장 다정한 색깔은 무엇일까요?",
   mainImg: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800", // 부드러운 파스텔톤 그라데이션

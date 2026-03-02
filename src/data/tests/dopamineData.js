@@ -1,4 +1,5 @@
 export const dopamineData = {
+  isReady: false,
   title: "나의 도파민 중독 유형 테스트",
   subTitle: "내 뇌는 지금 무엇에 지배당하고 있을까?",
   mainImg: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=800", // 화려하고 자극적인 네온 조명 이미지

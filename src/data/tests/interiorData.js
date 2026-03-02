@@ -1,4 +1,5 @@
 export const interiorData = {
+  isReady: false,
   id: "interior",
   title: "내가 만약 공간이라면? 나의 '무드 인테리어' 테스트",
   subTitle: "나의 성격과 취향이 하나의 방이 된다면 어떤 모습일까요? 당신의 내면이 머물고 싶은 공간을 찾아드립니다.",

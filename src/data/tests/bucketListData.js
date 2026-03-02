@@ -1,4 +1,5 @@
 export const bucketListData = {
+  isReady: false,
   title: "나만의 퍼스널 버킷리스트",
   subTitle: "죽기 전, 당신의 영혼이 가장 원했던 단 하나의 일",
   mainImg: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800", // 광활한 산맥과 자유로운 느낌

@@ -1,4 +1,5 @@
 export const weirdSuperpowerData = {
+  isReady: false,
   title: "나에게 숨겨진 '병맛 초능력' 찾기",
   subTitle: "마블은 절대 안 불러주지만, 일상에선 개이득인 하찮은 능력!",
   mainImg: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=800", // 우스꽝스러운 히어로 복장 이미지

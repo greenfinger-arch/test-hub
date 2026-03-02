@@ -1,4 +1,5 @@
 export const loveJinSangData = {
+  isReady: false,
   title: "나의 '연애 개진상' 지수: 설마 나도?",
   subTitle: "사랑이라는 이름의 횡포, 당신의 '진상력'을 측정해 드립니다.",
   mainImg: "https://images.unsplash.com/photo-1534330207526-8e81f10ec6fe?w=800", // 장난꾸러기 표정이나 삐친 듯한 코믹한 이미지

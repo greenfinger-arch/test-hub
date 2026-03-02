@@ -1,4 +1,5 @@
 export const desertIslandSurvivalData = {
+  isReady: false,
   title: "만약 우리가 '무인도'에 떨어진다면? 극한의 역할 분담",
   subTitle: "낭만은 끝났다! 살아서 돌아가기 위한 우리만의 생존 전략",
   mainImg: "https://images.unsplash.com/photo-1505881502353-a1986add373c?w=800", // 황량하지만 아름다운 무인도 해변
