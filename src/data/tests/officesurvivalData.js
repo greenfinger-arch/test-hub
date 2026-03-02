@@ -1,4 +1,4 @@
-const survivalData = {
+const officesurvivalData = {
   isReady: true,
   id: "officesurvival",
   title: "직장인 생존 가이드: 나의 오피스 생존력은?",
