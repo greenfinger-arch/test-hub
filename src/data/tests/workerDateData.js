@@ -41,28 +41,28 @@ export const workerDateData = {
       img: "/images/workerDate01.jpg",
       desc: "오늘 당신에게 필요한 건 정성 가득한 요리 한 접시! 줄 서서 먹는 맛집이나 프라이빗한 오마카세에서 미각의 즐거움을 느껴보세요. 배가 부르면 출근 스트레스도 사라지는 법이죠.",
       ctaText: "지금 가장 핫한 맛집 예약",
-      affiliateLink: "https://example.com/restaurants"
+      affiliateLink: "/https://app.catchtable.co.kr/ct/exhibition/event_260216_hidden?uniqueListId=1772526747453&isUseExhibitionFilter=1&metaContractedType=0&currentExhibitionKey=event_260216_hidden_1&serviceType=DINING&sortMethod=recommended&isInitialDate=0"
     },
     MOOD: {
       name: "인생샷 제조, 비주얼 나이트",
       img: "/images/workerDate02.jpg",
       desc: "지루한 사무실 뷰는 잊으세요! 한강이 보이는 루프탑이나 통창 유리 너머 야경이 펼쳐지는 감성 카페가 정답입니다. 예쁜 사진 한 장이 일주일의 원동력이 될 거예요.",
       ctaText: "야경 명소 루프탑 바 보기",
-      affiliateLink: "/https://example.com/rooftop"
+      affiliateLink: "/https://app.catchtable.co.kr/ct/map/COMMON?showTabs=true&bottomSheetHeightType=PARTIAL_MAP&serviceType=INTEGRATION&keyword=%EB%A3%A8%ED%94%84%ED%83%91&keywordSearch=%EB%A3%A8%ED%94%84%ED%83%91&uniqueListId=1772527046286&isShowListLabelExpanded=1&searchedMapLevel=13&showSubFilterInMap=1&zoomLevel=13&centerBoundsLat=35.443490992549265&centerBoundsLng=127.51140343300266&isKeywordSearchOpen=1"
     },
     REST: {
       name: "고요한 쉼표, 힐링 나이트",
       img: "images/workerDate03.jpg",
       desc: "서로의 숨소리에 집중할 수 있는 아늑한 와인바나 심야 만화카페는 어떠세요? 자극적인 곳보다는 낮은 조도 아래서 두런두런 대화 나누며 마음의 짐을 내려놓는 시간을 추천합니다.",
       ctaText: "아늑한 프라이빗 바 예약",
-      affiliateLink: "/https://example.com/cozy-place"
+      affiliateLink: "/https://app.catchtable.co.kr/ct/map/COMMON?showTabs=true&serviceType=INTEGRATION&bottomSheetHeightType=MAP&keyword=%ED%94%84%EB%9D%BC%EC%9D%B4%EB%B9%97+%EB%B0%94&keywordSearch=%ED%94%84%EB%9D%BC%EC%9D%B4%EB%B9%97+%EB%B0%94&isNewSearchInMap=1&isSearchInResults=0&prevSearchType=KEYWORD_SEARCH&uniqueListId=1772527150355&showSubFilterInMap=0&centerBoundsLat=35.443490992549265&centerBoundsLng=127.51140343300266&foodKindByKeyword=E_89&searchedMapLevel=13&zoomLevel=13&isSearchKeywordComplete=1&isShowListLabelExpanded=1"
     },
     PLAY: {
       name: "텐션 업! 액티비티 나이트",
       img: "images/workerDate04.jpg",
       desc: "앉아서 일하느라 굳은 몸을 깨울 시간! 야간 전시회 탐방, 볼링, 혹은 함께 원데이 클래스에 참여해 보세요. 무언가에 집중하다 보면 업무 생각은 어느덧 저 멀리 사라집니다.",
       ctaText: "이색 데이트 코스 찾기",
-      affiliateLink: "/https://example.com/activity"
+      affiliateLink: "/https://www.klook.com/ko/?spm=Home.TopNavigation.BackHome&clickId=9181f347d4"
     }
   }
 };
