@@ -476,26 +476,43 @@ const ButtonGroup = styled.div`
 `;
 const AnswerButton = styled.button`
   width: 100%;
-  padding: 15px;
+  padding: 16px; /* 살짝 더 여유 있게 */
   border: 1px solid #f1f3f5;
-  border-radius: 14px;
+  border-radius: 16px; /* 좀 더 둥글고 세련되게 */
   
-  /* 배경과 글자색을 명시적으로 고정하여 모바일 백지 현상 방지 */
-  background: #ffffff; 
-  color: #333333; 
+  /* [핵심] 기존의 투명하고 고급스러운 화이트 톤 유지 */
+  background: #ffffff;
+  
+  /* [중요] 단순 블랙이 아닌 기존 데스크톱의 깊이 있는 컬러 사용 */
+  color: #495057; 
   
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.25s ease;
   font-size: 0.95rem;
-  
-  /* 아이폰/갤럭시 브라우저 강제 색상 변경 방지 */
-  -webkit-text-fill-color: #333333; 
+  font-weight: 500;
+  line-height: 1.5;
+
+  /* [모바일 치트키] 시스템이 글자색을 마음대로 반전시키지 못하게 고정 */
+  -webkit-text-fill-color: #495057; 
 
   &:hover {
+    /* 기존 데스크톱의 블루 포인트 스타일 복구 */
     border-color: #228be6;
     background: #f8fbff;
     color: #228be6;
-    -webkit-text-fill-color: #228be6;
+    -webkit-text-fill-color: #228be6; /* 호버 시에도 색상 고정 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34, 139, 230, 0.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  /* 모바일 기기에서만 적용되는 미세 조정 */
+  @media (max-width: 768px) {
+    padding: 14px;
+    font-size: 0.9rem;
   }
 `;
 const MainButton = styled.button`
