@@ -87,3 +87,43 @@ button:hover {
     -webkit-text-fill-color: currentColor;
   }
 }
+
+/* 1. 선택지 버튼 내부 텍스트 컬러 강제 고정 */
+button,
+.answer-button,
+.option-button {
+  /* 시스템이나 다크모드 설정이 개입하지 못하도록 !important 사용 */
+  color: #213547 !important;
+  background-color: #f9f9f9 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  -webkit-text-fill-color: #213547 !important;
+  /* 사파리 강제 지정 */
+}
+
+/* 2. 다크모드일 때도 글자가 하얗게 변해서 배경과 겹치지 않게 고정 */
+@media (prefers-color-scheme: dark) {
+
+  button,
+  .answer-button {
+    background-color: #333333 !important;
+    /* 버튼 배경을 어둡게 */
+    color: #ffffff !important;
+    /* 글자를 하얗게 */
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
+
+/* 3. 라이트모드일 때 확실하게 어두운 글자색 보장 */
+@media (prefers-color-scheme: light) {
+
+  button,
+  .answer-button {
+    background-color: #ffffff !important;
+    /* 버튼 배경을 하얗게 */
+    color: #213547 !important;
+    /* 글자를 어둡게 */
+    -webkit-text-fill-color: #213547 !important;
+    border: 1px solid #dddddd !important;
+  }
+}
