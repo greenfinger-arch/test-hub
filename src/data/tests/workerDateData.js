@@ -52,14 +52,14 @@ export const workerDateData = {
     },
     REST: {
       name: "고요한 쉼표, 힐링 나이트",
-      img: "images/workerDate03.jpg",
+      img: "/images/workerDate03.jpg",
       desc: "서로의 숨소리에 집중할 수 있는 아늑한 와인바나 심야 만화카페는 어떠세요? 자극적인 곳보다는 낮은 조도 아래서 두런두런 대화 나누며 마음의 짐을 내려놓는 시간을 추천합니다.",
       ctaText: "아늑한 프라이빗 바 예약",
       affiliateLink: "https://www.catchtable.net/"
     },
     PLAY: {
       name: "텐션 업! 액티비티 나이트",
-      img: "images/workerDate04.jpg",
+      img: "/images/workerDate04.jpg",
       desc: "앉아서 일하느라 굳은 몸을 깨울 시간! 야간 전시회 탐방, 볼링, 혹은 함께 원데이 클래스에 참여해 보세요. 무언가에 집중하다 보면 업무 생각은 어느덧 저 멀리 사라집니다.",
       ctaText: "이색 데이트 코스 찾기",
       affiliateLink: "https://www.klook.com/ko/"
