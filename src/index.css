@@ -3,10 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* 시스템 다크모드 강제 간섭을 최소화하기 위해 light로 우선순위 조정 가능 */
   color-scheme: light dark;
-
-  /* 기본 글자색과 배경색 (다크모드 기준) */
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -32,8 +29,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* 모바일에서 텍스트 컬러가 시스템에 의해 변하는 것을 방지 */
-  color: inherit;
 }
 
 h1 {
@@ -41,7 +36,6 @@ h1 {
   line-height: 1.1;
 }
 
-/* 중요: 버튼 설정 수정 */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -50,8 +44,6 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  /* 글자색을 명시적으로 지정하여 모바일 백지 현상 방지 */
-  color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -60,7 +52,11 @@ button:hover {
   border-color: #646cff;
 }
 
-/* 라이트모드(일반 상황)에서의 최적화 */
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -73,57 +69,5 @@ button:hover {
 
   button {
     background-color: #f9f9f9;
-    /* 라이트모드일 때 버튼 글자색을 어두운 색으로 명시 */
-    color: #213547;
-    border: 1px solid #ddd;
-    /* 버튼 윤곽을 더 선명하게 */
-  }
-}
-
-/* 추가: 모바일 브라우저의 강제 다크모드 대응 (치트키) */
-@media screen and (max-width: 768px) {
-  button {
-    /* 선택지 글자가 파란 블록으로만 보였던 문제를 해결하는 핵심 라인 */
-    -webkit-text-fill-color: currentColor;
-  }
-}
-
-/* 1. 선택지 버튼 내부 텍스트 컬러 강제 고정 */
-button,
-.answer-button,
-.option-button {
-  /* 시스템이나 다크모드 설정이 개입하지 못하도록 !important 사용 */
-  color: #213547 !important;
-  background-color: #f9f9f9 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  -webkit-text-fill-color: #213547 !important;
-  /* 사파리 강제 지정 */
-}
-
-/* 2. 다크모드일 때도 글자가 하얗게 변해서 배경과 겹치지 않게 고정 */
-@media (prefers-color-scheme: dark) {
-
-  button,
-  .answer-button {
-    background-color: #333333 !important;
-    /* 버튼 배경을 어둡게 */
-    color: #ffffff !important;
-    /* 글자를 하얗게 */
-    -webkit-text-fill-color: #ffffff !important;
-  }
-}
-
-/* 3. 라이트모드일 때 확실하게 어두운 글자색 보장 */
-@media (prefers-color-scheme: light) {
-
-  button,
-  .answer-button {
-    background-color: #ffffff !important;
-    /* 버튼 배경을 하얗게 */
-    color: #213547 !important;
-    /* 글자를 어둡게 */
-    -webkit-text-fill-color: #213547 !important;
-    border: 1px solid #dddddd !important;
   }
 }

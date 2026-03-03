@@ -479,13 +479,23 @@ const AnswerButton = styled.button`
   padding: 15px;
   border: 1px solid #f1f3f5;
   border-radius: 14px;
-  background: white;
+  
+  /* 배경과 글자색을 명시적으로 고정하여 모바일 백지 현상 방지 */
+  background: #ffffff; 
+  color: #333333; 
+  
   cursor: pointer;
   transition: 0.2s;
   font-size: 0.95rem;
+  
+  /* 아이폰/갤럭시 브라우저 강제 색상 변경 방지 */
+  -webkit-text-fill-color: #333333; 
+
   &:hover {
     border-color: #228be6;
     background: #f8fbff;
+    color: #228be6;
+    -webkit-text-fill-color: #228be6;
   }
 `;
 const MainButton = styled.button`
