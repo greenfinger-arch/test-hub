@@ -310,20 +310,20 @@ const TestManager = ({ data }) => {
               {result.ctaText}
             </AffiliateButton>
 
-            {/* [추가] 제휴 마케팅 면책 문구 - 스타일은 하단 가이드 참고 */}
+            {/* 면책 문구: 상하 간격 밸런스 조정 */}
             <p
               style={{
                 fontSize: "11px",
                 color: "#999",
-                marginTop: "-10px",
-                marginBottom: "20px",
+                marginTop: "10px", // 위 버튼과의 간격을 넉넉히 확보 (기존 -10px에서 변경)
+                marginBottom: "10px", // 아래 버튼과의 간격을 절반으로 축소 (기존 20px에서 변경)
                 textAlign: "center",
                 lineHeight: "1.4",
+                wordBreak: "keep-all", // 한 줄로 나올 때 단어가 어색하게 잘리지 않도록 설정
               }}
             >
-              본 서비스는 파트너스 활동을 통해,
-              <br />
-              일정액의 수수료를 제공받을 수 있습니다.
+              본 서비스는 파트너스 활동을 통해, 일정액의 수수료를 제공받을 수
+              있습니다.
             </p>
 
             <ShareButton onClick={handleShare}>결과 공유하기</ShareButton>
