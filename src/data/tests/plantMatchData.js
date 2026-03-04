@@ -47,6 +47,8 @@ export const plantMatchData = {
     }
   ],
   results: {
+    // 로직에서 가장 많이 나온 점수를 조합해 이 4가지 중 하나로 수렴하게 되어있는지 확인이 필요합니다.
+    // 만약 로직이 SUN/SHADE 중 택1 + HUMID/DRY 중 택1 방식으로 조합한다면 아래 키가 맞습니다.
     SUN_HUMID: {
       name: "파이팅 넘치는 '여인초'",
       img: "/images/plant-res01.jpg",
