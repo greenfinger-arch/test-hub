@@ -62,6 +62,7 @@ import { mentalWeatherData } from "./data/tests/mentalWeatherData";
 import { dailyVitaminData } from "./data/tests/dailyVitaminData";
 import { officesurvivalData } from "./data/tests/officesurvivalData";
 import { workerDateData } from "./data/tests/workerDateData";
+import { plantMatchData } from "./data/tests/plantMatchData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -133,6 +134,7 @@ const testRegistry = {
   dailyVitamin: dailyVitaminData,
   officesurvival: officesurvivalData,
   workerDate: workerDateData,
+  plantMatch: plantMatchData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
