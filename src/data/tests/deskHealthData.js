@@ -1,6 +1,7 @@
 export const deskHealthData = {
   id: "deskHealth",
   title: "나의 데스크 건강 등급 & 생산성 진단",
+  relatedPostUrl: "https://ranklamp.com/office-worker-health-productivity-desk-management",
   subTitle: "거북목 탈출! 당신의 업무 효율을 200% 올릴 데스크 환경은?",
   isReady: true,
   mainImg: "/images/deskhealth-main.jpg",

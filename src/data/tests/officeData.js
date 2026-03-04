@@ -2,6 +2,7 @@ export const officeData = {
   isReady: true,
   id: "office",
   title: "직장인 부캐 찾기: 오피스 빌런 & 히어로",
+  relatedPostUrl: "https://ranklamp.com/office-villain-test",
   subTitle: "사무실 안에서의 당신은 평화를 지키는 히어로인가요, 아니면 공포의 빌런인가요? 당신의 숨겨진 업무 캐릭터를 진단해 드립니다.",
   mainImg: "/images/office-main.jpg",
 

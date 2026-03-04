@@ -2,6 +2,7 @@ export const officesurvivalData = {
   isReady: true,
   id: "officesurvival",
   title: "직장인 생존 가이드: 나의 오피스 생존력은?",
+  relatedPostUrl: "https://ranklamp.com/office-survival-guide-personality-test",
   subTitle:
     "약육강식의 정글 같은 사무실, 당신은 어떤 전략으로 살아남고 있나요? 당신의 생존 등급을 진단해 드립니다.",
   mainImg: "/images/officesurvival-main.jpg",

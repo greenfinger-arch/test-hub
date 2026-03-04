@@ -1,6 +1,7 @@
 export const officePlantData = {
   id: "officePlant",
   title: "나의 책상 위 작은 숲, 소울 플랜트 찾기",
+  relatedPostUrl: "https://ranklamp.com/office-plants-efficiency",
   subTitle: "딱딱한 사무실 책상을 이른 봄의 햇살로 채워줄 당신의 짝꿍은?",
   isReady: true,
   mainImg: "/images/office-plant-main.jpg",

@@ -1,6 +1,7 @@
 export const plantMatchData = {
   id: "plantMatch",
   title: "나의 성향 저격 반려식물 찾기",
+  relatedPostUrl: "https://ranklamp.com/find-your-soul-partner-plant",
   subTitle: "식물 킬러 탈출! 당신의 라이프스타일과 통하는 초록 단짝은?",
   isReady: true,
   mainImg: "/images/plant-main.jpg",

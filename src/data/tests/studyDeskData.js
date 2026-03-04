@@ -53,21 +53,21 @@ export const studyDeskData = {
       img: "/images/study-res01.jpg",
       desc: "당신은 주변 시야가 차단될 때 최고의 몰입도를 보이는군요! 책상을 벽 쪽으로 붙이고 시야를 분산시키는 물건은 과감히 치우세요. 문을 등지지 않도록 배치하는 것만으로도 심리적 불안감이 사라져 집중력이 쑥 올라갑니다.",
       ctaText: "집중력 향상 칸막이 데스크 보기",
-      affiliateLink: "https://link.coupang.com/a/study_focus"
+      affiliateLink: "https://link.coupang.com/a/dXQUvB"
     },
     CALM: {
       name: "창의적인 수재, '카페형' 배치",
       img: "/images/study-res02.jpg",
       desc: "너무 막힌 곳보다는 적당히 탁 트인 공간에서 효율이 좋은 타입이네요! 책상을 방 한가운데 배치하거나 대각선으로 두어 시야를 확보해 보세요. 조명을 백색광보다는 살짝 따뜻한 색으로 바꾸면 마음이 편안해져 장기전에 강해집니다.",
       ctaText: "편안한 눈을 위한 LED 스탠드 보기",
-      affiliateLink: "https://link.coupang.com/a/study_calm"
+      affiliateLink: "https://link.coupang.com/a/dXQX0w"
     },
     CHAOS: {
       name: "잠재력 폭발 직전, '환경 리셋' 시급",
       img: "/images/study-res03.jpg",
       desc: "지금 당신의 책상은 뇌가 쉴 틈을 주지 않고 있어요! 창가 바로 앞은 시선을 뺏기기 쉬우니 책상을 돌려보세요. 발바닥이 땅에 닿는 발받침대 하나만 추가해도 잡생각이 사라지고 엉덩이 힘이 길러집니다. 할 수 있어요!",
-      ctaText: "바른 자세를 돕는 각도조절 책상",
-      affiliateLink: "https://link.coupang.com/a/study_chaos"
+      ctaText: "바른 자세를 돕는 발받침대",
+      affiliateLink: "https://link.coupang.com/a/dXReyK"
     }
   }
 };
