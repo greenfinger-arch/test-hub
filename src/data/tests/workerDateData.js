@@ -2,6 +2,7 @@ export const workerDateData = {
   id: "workerDate",
   title: "퇴근 후 로맨틱 레시피",
   subTitle: "지친 하루 끝에 마법처럼 펼쳐질 우리만의 데이트",
+  isReady: true,
   mainImg: "/images/workerDate-main.jpg", // 화사한 파티/데이트 무드
   questions: [
     {
