@@ -303,16 +303,32 @@ const TestManager = ({ data }) => {
             />
             <ResultDesc>{result.desc}</ResultDesc>
 
+            {/* 제휴 버튼 */}
             <AffiliateButton
               onClick={() => window.open(result.affiliateLink, "_blank")}
             >
               {result.ctaText}
             </AffiliateButton>
 
+            {/* [추가] 제휴 마케팅 면책 문구 - 스타일은 하단 가이드 참고 */}
+            <p
+              style={{
+                fontSize: "11px",
+                color: "#999",
+                marginTop: "-10px",
+                marginBottom: "20px",
+                textAlign: "center",
+                lineHeight: "1.4",
+              }}
+            >
+              이 포스팅은 쿠팡 파트너스 활동의 일환으로,
+              <br />
+              이에 따른 일정액의 수수료를 제공받습니다.
+            </p>
+
             <ShareButton onClick={handleShare}>결과 공유하기</ShareButton>
 
             <ActionGroup>
-              {/* 방법 B: 부드럽게 첫 질문으로 돌아가고 싶을 때 (추천) */}
               <TextActionButton
                 onClick={() => {
                   setStep(0);
@@ -325,7 +341,6 @@ const TestManager = ({ data }) => {
 
               <Divider>|</Divider>
 
-              {/* [수정] 메인으로 나갈 때 깜빡임 없이 부드럽게 이동합니다. */}
               <TextActionButton onClick={() => navigate("/")}>
                 다른 테스트 보기 →
               </TextActionButton>
@@ -485,13 +500,13 @@ const AnswerButton = styled.button`
   padding: 16px; /* 살짝 더 여유 있게 */
   border: 1px solid #f1f3f5;
   border-radius: 16px; /* 좀 더 둥글고 세련되게 */
-  
+
   /* [핵심] 기존의 투명하고 고급스러운 화이트 톤 유지 */
   background: #ffffff;
-  
+
   /* [중요] 단순 블랙이 아닌 기존 데스크톱의 깊이 있는 컬러 사용 */
-  color: #495057; 
-  
+  color: #495057;
+
   cursor: pointer;
   transition: all 0.25s ease;
   font-size: 0.95rem;
@@ -499,7 +514,7 @@ const AnswerButton = styled.button`
   line-height: 1.5;
 
   /* [모바일 치트키] 시스템이 글자색을 마음대로 반전시키지 못하게 고정 */
-  -webkit-text-fill-color: #495057; 
+  -webkit-text-fill-color: #495057;
 
   &:hover {
     /* 기존 데스크톱의 블루 포인트 스타일 복구 */
