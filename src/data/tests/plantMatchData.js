@@ -47,30 +47,28 @@ export const plantMatchData = {
     }
   ],
   results: {
-    // 로직에서 가장 많이 나온 점수를 조합해 이 4가지 중 하나로 수렴하게 되어있는지 확인이 필요합니다.
-    // 만약 로직이 SUN/SHADE 중 택1 + HUMID/DRY 중 택1 방식으로 조합한다면 아래 키가 맞습니다.
-    SUN_HUMID: {
+    SUN: {
       name: "파이팅 넘치는 '여인초'",
       img: "/images/plant-res01.jpg",
       desc: "당신은 존재감 뿜뿜! 시원시원한 잎을 가진 여인초와 닮았네요. 사람들의 관심을 먹고 자라며, 가끔은 과한 열정으로 번아웃이 오기도 하지만 그게 당신의 매력! 웅장한 기운으로 집안 분위기를 압도해 보세요.",
       ctaText: "거실의 주인공, 여인초 구경하기",
       affiliateLink: "https://link.coupang.com/a/dXmDWd"
     },
-    SHADE_DRY: {
+    SHADE: {
       name: "무심한 듯 시크한 '스투키'",
       img: "/images/plant-res02.jpg",
       desc: "한 달에 한 번 물 주는 것도 귀찮으시죠? 걱정 마세요. 스투키는 당신이 자신을 잊어버릴 때 가장 행복해합니다. '나한테 관심 꺼!'라고 외치는 스투키와 함께 서로 간섭하지 않는 쿨한 동거 생활을 즐겨보세요.",
       ctaText: "게으른 집사용 스투키 보러가기",
       affiliateLink: "https://link.coupang.com/a/dXmziN"
     },
-    SUN_DRY: {
+    DRY: {
       name: "불사조 멘탈 '산세베리아'",
       img: "/images/plant-res03.jpg",
       desc: "어떤 악조건에서도 살아남는 당신, 식물계의 생존왕 산세베리아가 딱입니다. 공기 정화 능력은 덤! 웬만해서는 죽지 않는 강인함으로 당신의 든든한 초록 보디가드가 되어줄 거예요.",
       ctaText: "강철 생명력 산세베리아 찾기",
       affiliateLink: "https://link.coupang.com/a/dXmZcg"
     },
-    SHADE_HUMID: {
+    HUMID: {
       name: "애교 만점 수다쟁이 '마란타'",
       img: "/images/plant-res04.jpg",
       desc: "밤이 되면 잎을 모아 기도하는 섬세한 당신! 마란타는 당신의 작은 관심에도 민감하게 반응하며 매일 새로운 모습을 보여줄 거예요. 조금 까다롭지만, 그만큼 사랑스러운 반려식물과 깊은 교감을 나눠보세요.",
