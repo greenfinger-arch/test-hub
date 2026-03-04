@@ -321,9 +321,9 @@ const TestManager = ({ data }) => {
                 lineHeight: "1.4",
               }}
             >
-              이 포스팅은 쿠팡 파트너스 활동의 일환으로,
+              본 서비스는 파트너스 활동을 통해,
               <br />
-              이에 따른 일정액의 수수료를 제공받습니다.
+              일정액의 수수료를 제공받을 수 있습니다.
             </p>
 
             <ShareButton onClick={handleShare}>결과 공유하기</ShareButton>
