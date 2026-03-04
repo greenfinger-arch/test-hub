@@ -1,7 +1,7 @@
 export const studyDeskData = {
   id: "studyDesk",
   title: "나의 집중력을 깨우는 '공부 명당' 찾기",
-  relatedPostUrl: "https://ranklamp.com/student-desk-layout-optimization-for-maximum-focusy",
+  relatedPostUrl: "https://ranklamp.com/student-desk-layout-optimization-for-maximum-focus",
   subTitle: "혹시 책상이 뇌를 방해하고 있나요? 공간 심리로 보는 최적의 배치",
   isReady: true,
   mainImg: "/images/study-main.jpg",
