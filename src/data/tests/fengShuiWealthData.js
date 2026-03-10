@@ -1,6 +1,7 @@
 export const fengShuiWealthData = {
   id: "fengshui-wealth",
   title: "내 방의 '재물운' 골든스팟 진단",
+  relatedPostUrl: "https://ranklamp.com/2026-bedroom-feng-shui-wealth-guide/",
   subTitle: "혹시 당신의 방이 돈이 새 나가는 구조인가요? 풍수지리로 분석한 2026년 맞춤형 재물운 인테리어 솔루션.",
   isReady: true,
   mainImg: "/images/fengShuiWealth-main.jpg",
