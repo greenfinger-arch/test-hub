@@ -67,8 +67,8 @@ import { deskHealthData } from "./data/tests/deskHealthData";
 import { officePlantData } from "./data/tests/officePlantData";
 import { studyDeskData } from "./data/tests/studyDeskData";
 import { studyBalanceData } from "./data/tests/studyBalanceData";
-import { spineHealthData } from "./data/tests/fengShuiWealthData";
-import { fengShuiWealthData } from "./data/tests/spineHealthData";
+import { spineHealthData } from "./data/tests/spineHealthData";
+import { fengShuiWealthData } from "./data/tests/fengShuiWealthData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
