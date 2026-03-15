@@ -72,6 +72,7 @@ import { fengShuiWealthData } from "./data/tests/fengShuiWealthData";
 import { fengShuiWarningData } from "./data/tests/fengShuiWarningData";
 import { fengShuiBlessingData } from "./data/tests/fengShuiBlessingData";
 import { krPlantMiracleData } from "./data/tests/krPlantMiracleData.JS";
+import { KitchenScentData } from "./data/tests/KitchenScentData.JS";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -153,6 +154,7 @@ const testRegistry = {
   fengShuiWarning: fengShuiWarningData,
   fengShuiBlessing: fengShuiBlessingData,
   krPlantMiracle: krPlantMiracleData,
+  KitchenScent: KitchenScentData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)

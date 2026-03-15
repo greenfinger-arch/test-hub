@@ -1,6 +1,6 @@
 export const krPlantMiracleData = {
   id: "kr-plant-miracle",
-  title: "2026 공간의 기적: 당신을 위한 '개운 식물' 처방전",
+  title: "2026 공간의 기적: 당신을 위한 '행운 식물' 처방전",
   relatedPostUrl: "https://ranklamp.com/2026-lucky-plants-feng-shui-guide/",
   subTitle: "빛과 호흡이 머무는 곳에 행운이 깃듭니다. 2026년 당신의 공간과 에너지를 바꿔줄 운명의 반려식물을 찾아보세요.",
   isReady: true,
