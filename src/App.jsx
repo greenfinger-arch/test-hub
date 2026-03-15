@@ -72,7 +72,7 @@ import { fengShuiWealthData } from "./data/tests/fengShuiWealthData";
 import { fengShuiWarningData } from "./data/tests/fengShuiWarningData";
 import { fengShuiBlessingData } from "./data/tests/fengShuiBlessingData";
 import { krPlantMiracleData } from "./data/tests/krPlantMiracleData.JS";
-import { KitchenScentData } from "./data/tests/KitchenScentData.JS";
+import { KitchenScentData } from "./data/tests/KitchenScentData";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
