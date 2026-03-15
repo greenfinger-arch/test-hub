@@ -1,4 +1,4 @@
-export const PlantMiracleData = {
+export const krPlantMiracleData = {
   id: "kr-plant-miracle",
   title: "2026 공간의 기적: 당신을 위한 '개운 식물' 처방전",
   relatedPostUrl: "https://ranklamp.com/2026-lucky-plants-feng-shui-guide/",
