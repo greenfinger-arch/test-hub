@@ -63,28 +63,28 @@ export const FengShuiMasterData = {
       img: "/images/krMasterRes01.jpg",
       desc: "당신의 공간은 기의 흐름이 매우 원활한 '운의 고속도로' 상태입니다. 채광과 통풍의 조화가 뛰어나 2026년 어떤 일을 시작해도 탄력을 받을 것입니다. 현관에 맑은 소리가 나는 종을 달아 행운의 입장을 알리고, 거실에 생기 있는 화분 하나만 두어 이 흐름을 유지하세요.",
       ctaText: "행운을 부르는 '도어벨' 컬렉션",
-      affiliateLink: "https://link.coupang.com/a/door-bell"
+      affiliateLink: "https://link.coupang.com/a/d5xfuG"
     },
     OBSTACLE: {
       name: "보완이 필요한 '잠재력의 공간' (비보 풍수 필수)",
       img: "/images/krMasterRes02.jpg",
       desc: "구조상 기가 정체되기 쉬운 부분이 보입니다. 하지만 걱정 마세요! 현관에서 거실이 바로 보인다면 파티션이나 식물로 시선을 분산시키고, 채광이 부족하다면 밝은 조명을 활용해 인위적으로 '양기'를 보충하면 됩니다. 작은 변화만으로도 막혔던 재물운의 물꼬를 틀 수 있습니다.",
       ctaText: "공간의 기운을 바꾸는 '무드등 & 가림막'",
-      affiliateLink: "https://link.coupang.com/a/fengshui-item"
+      affiliateLink: "https://link.coupang.com/a/d5xnKH"
     },
     SHADOW: {
       name: "에너지가 고여있는 '정적인 안식처'",
       img: "/images/krMasterRes03.jpg",
       desc: "집안의 기운이 너무 차분하여 '상승'하는 힘이 부족할 수 있습니다. 특히 북향이거나 그늘진 곳이 많다면 붉은 계열의 액자나 따뜻한 색감의 카펫을 활용해 온기를 더하세요. 기운을 억지로 바꾸려 하기보다, 소품을 통해 에너지를 살짝 깨워주는 것만으로도 충분합니다.",
       ctaText: "따뜻한 기운을 더해줄 '인테리어 액자'",
-      affiliateLink: "https://link.coupang.com/a/warm-art"
+      affiliateLink: "https://link.coupang.com/a/d5xsbu"
     },
     CHAOS: {
       name: "재배치가 시급한 '운의 혼선 구간'",
       img: "/images/krMasterRes04.jpg",
       desc: "물건의 배치와 기의 흐름이 서로 엉켜 있어, 에너지가 소모되고 있습니다. 큰 가구의 위치를 조금만 옮겨도 무거웠던 머리가 맑아지는 것을 느낄 수 있습니다. 풍수에서 가장 큰 개운법은 '정리'와 '환기'입니다. 오늘 당장 창문을 열고, 사용하지 않는 물건을 정리하는 것부터 시작해 보세요.",
-      ctaText: "공간을 살리는 '풍수 가구 배치 가이드'",
-      affiliateLink: "https://link.coupang.com/a/space-guide"
+      ctaText: "공간을 살리는 '심플한 리빙박스 정리함'",
+      affiliateLink: "https://link.coupang.com/a/d5xDAp"
     }
   }
 };
