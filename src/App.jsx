@@ -80,6 +80,7 @@ import { StudentRoomData } from "./data/tests/StudentRoomData.js";
 import { HealingRoomData } from "./data/tests/HealingRoomData.js";
 import { SingleRoomData } from "./data/tests/SingleRoomData.js";
 import { PetTeriorData } from "./data/tests/PetTeriorData.js";
+import { BabyRoomData } from "./data/tests/BabyRoomData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -169,6 +170,7 @@ const testRegistry = {
   HealingRoom: HealingRoomData,
   SingleRoom: SingleRoomData,
   PetTerior: PetTeriorData,
+  BabyRoomData: BabyRoomData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
