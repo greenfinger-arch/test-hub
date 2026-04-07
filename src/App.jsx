@@ -83,6 +83,7 @@ import { PetTeriorData } from "./data/tests/PetTeriorData.js";
 import { BabyRoomData } from "./data/tests/BabyRoomData.js";
 import { koreaApartmentFortuneData } from "./data/tests/koreaApartmentFortuneData.js";
 import { resumePassFortuneData } from "./data/tests/resumePassFortuneData.js";
+import { storeSuccessFortuneData } from "./data/tests/storeSuccessFortuneData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -175,6 +176,7 @@ const testRegistry = {
   BabyRoomData: BabyRoomData,
   koreaApartmentFortune: koreaApartmentFortuneData,
   resumePassFortune: resumePassFortuneData,
+  storeSuccessFortune: storeSuccessFortuneData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
