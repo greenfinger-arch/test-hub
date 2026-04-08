@@ -195,7 +195,7 @@ const MainGallery = () => {
     <MainContainer>
       <header style={{ textAlign: "center", marginBottom: "50px" }}>
         <Badge>Interactive Test Lab</Badge>
-        <MainTitle>랭크램프 심리 연구소</MainTitle>
+        <MainTitle>스마트 풍수 연구소</MainTitle>
         <SubTitle>나도 몰랐던 내 안의 '부캐'를 찾아보세요.</SubTitle>
       </header>
 
