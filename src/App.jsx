@@ -87,6 +87,7 @@ import { storeSuccessFortuneData } from "./data/tests/storeSuccessFortuneData.js
 import { smartphoneWealthFortuneData } from "./data/tests/smartphoneWealthFortuneData.js";
 import { relationshipWealthFortuneData } from "./data/tests/relationshipWealthFortuneData.js";
 import { nobleConnectionFortuneData } from "./data/tests/nobleConnectionFortuneData.js";
+import { firstImpressionScientificData } from "./data/tests/firstImpressionScientificData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -183,6 +184,7 @@ const testRegistry = {
   smartphoneWealthFortune: smartphoneWealthFortuneData,
   relationshipWealthFortune: relationshipWealthFortuneData,
   nobleConnectionFortune: nobleConnectionFortuneData,
+  firstImpressionScientific: firstImpressionScientificData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
