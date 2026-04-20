@@ -89,6 +89,7 @@ import { relationshipWealthFortuneData } from "./data/tests/relationshipWealthFo
 import { nobleConnectionFortuneData } from "./data/tests/nobleConnectionFortuneData.js";
 import { firstImpressionScientificData } from "./data/tests/firstImpressionScientificData.js";
 import { gossipDefenseRiskData } from "./data/tests/gossipDefenseRiskData.js";
+import { spaceEnergyAuditData } from "./data/tests/spaceEnergyAuditData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -187,6 +188,7 @@ const testRegistry = {
   nobleConnectionFortune: nobleConnectionFortuneData,
   firstImpressionScientific: firstImpressionScientificData,
   gossipDefenseRisk: gossipDefenseRiskData,
+  spaceEnergyAudit: spaceEnergyAuditData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
