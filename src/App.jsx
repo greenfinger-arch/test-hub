@@ -93,6 +93,7 @@ import { spaceEnergyAuditData } from "./data/tests/spaceEnergyAuditData.js";
 import { luckyZoneFashionAuditData } from "./data/tests/luckyZoneFashionAuditData.js";
 import { luckyColorSynergyData } from "./data/tests/luckyColorSynergyData.js";
 import { signatureScentAttractionData } from "./data/tests/signatureScentAttractionData.js";
+import { livingRoomFengShuiData } from "./data/tests/livingRoomFengShuiData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -195,6 +196,7 @@ const testRegistry = {
   luckyZoneFashionAudit: luckyZoneFashionAuditData,
   luckyColorSynergy: luckyColorSynergyData,
   signatureScentAttraction: signatureScentAttractionData,
+  livingRoomFengShui: livingRoomFengShuiData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
