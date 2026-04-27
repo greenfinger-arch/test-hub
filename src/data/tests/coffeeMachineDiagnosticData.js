@@ -60,7 +60,7 @@ export const coffeeMachineDiagnosticData = {
   results: {
     EFFICIENCY: {
       name: "초효율 전략가, '미니멀 엑셀러레이터'",
-      img: "/images/resEfficiency (2).jpg", // 일리 Y3.3 또는 캡슐 머신 이미지
+      img: "/images/resEfficiency001.jpg", // 일리 Y3.3 또는 캡슐 머신 이미지
       desc: "당신에게 커피는 빠른 각성과 실행력을 위한 '스마트 연료'입니다. 군더더기 없는 루틴이 당신의 집중력을 배가시킵니다.\n\n*추천: 일리 Y3.3 (미니멀리즘의 정수) / 네스프레소 시티즈",
       ctaText: "가장 빠른 각성 도구 보기",
       affiliateLink: "https://link.coupang.com/a/exBRf6"
@@ -74,7 +74,7 @@ export const coffeeMachineDiagnosticData = {
     },
     BALANCE: {
       name: "합리적 운영자, '스마트 매니저'",
-      img: "/images/resBalance (2).jpg", // 필립스 라떼고 또는 전자동 이미지
+      img: "/images/resBalance001.jpg", // 필립스 라떼고 또는 전자동 이미지
       desc: "품질과 편의성의 완벽한 균형을 중시합니다. 시스템화된 머신은 당신이 더 중요한 의사결정에 집중할 수 있도록 돕습니다.\n\n*추천: 필립스 5400 라떼고 (스마트한 관리) / 드롱기 프리마돈나",
       ctaText: "균형 잡힌 솔루션 확인하기",
       affiliateLink: "https://link.coupang.com/a/exrCY9"
