@@ -53,28 +53,28 @@ export const airPurifierDiagnosticData = {
       img: "/images/resGuardian02.jpg",
       desc: "당신에게는 외부의 탁기를 완벽히 차단하는 '금(金)'의 결계가 필요합니다. 미세먼지뿐만 아니라 초미세 입자까지 완벽하게 잡아내는 고성능 필터가 당신의 컨디션을 지켜줄 것입니다.\n\n*추천: 블루에어 헬스프로텍트 (압도적 정화력) / 삼성 비스포크 큐브 Air",
       ctaText: "완벽한 정화 솔루션 확인하기",
-      affiliateLink: "https://link.coupang.com/a/blueair-link"
+      affiliateLink: "https://link.coupang.com/a/ew934o"
     },
     LIFESTYLE: {
       name: "활기찬 순환의 중심, '에너지 부스터'",
       img: "/images/resEnergy.jpg",
       desc: "정체된 공기를 빠르게 순환시키는 '목(木)'과 '수(水)'의 에너지가 필요하시군요. 강력한 서큘레이션 기능이 탑재된 제품은 집안의 나쁜 냄새를 빠르게 제거하고 활기찬 기운을 불어넣어 줍니다.\n\n*추천: LG 퓨리케어 360도 (전방향 순환) / 다이슨 빅+콰이엇",
       ctaText: "활기찬 공간 만들기",
-      affiliateLink: "https://link.coupang.com/a/lg-puricare-link"
+      affiliateLink: "https://link.coupang.com/a/ew9Vsp"
     },
     SILENT: {
       name: "고요한 휴식의 동반자, '딥 슬립 마스터'",
       img: "/images/resSilent.jpg",
       desc: "수면 중 기의 흐름을 방해하지 않는 정숙함이 최우선입니다. 소음 없이 공기를 맑게 유지하는 제품은 당신의 잠재의식을 정화하고 깊은 수면을 통해 명료한 판단력을 되찾아 줍니다.\n\n*추천: 다이슨 빅+콰이엇 포름알데히드 (도서관 수준 정숙함) / 코웨이 노블",
       ctaText: "평온한 수면 환경 조성하기",
-      affiliateLink: "https://link.coupang.com/a/dyson-link"
+      affiliateLink: "https://link.coupang.com/a/exacq5"
     },
     DESIGN: {
       name: "영감을 주는 오브제, '아트 큐레이터'",
       img: "/images/resDesign.jpg",
       desc: "당신에게 가전은 공간의 아우라를 완성하는 예술품입니다. 기능은 기본, 독창적인 디자인으로 시각적 즐거움을 주는 제품은 당신의 창의적 에너지를 자극하고 삶의 만족도를 높여줍니다.\n\n*추천: LG 퓨리케어 에어로타워 (건축적 미학) / 삼성 비스포크 디자인 라인",
       ctaText: "감각적인 가전 컬렉션 보기",
-      affiliateLink: "https://link.coupang.com/a/bespoke-link"
+      affiliateLink: "https://link.coupang.com/a/ew9Vsp"
     }
   }
 };
