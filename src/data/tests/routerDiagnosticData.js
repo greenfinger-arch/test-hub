@@ -90,7 +90,7 @@ export const routerDiagnosticData = {
       name: "스마트한 기준점, '올라운드 기가 비트'",
       img: "/images/resBalance03.jpg",
       desc: "속도, 범위, 가격 어느 하나 빠지지 않는 밸런스형 Wi-Fi 6E/7 모델이 당신에게 적합합니다. 일상의 스트레스 없는 연결을 합리적으로 경험해 보세요.",
-      affiliateLink: "https://link.coupang.com/a/router-balance",
+      affiliateLink: "https://link.coupang.com/a/dLnO4mGCbs",
       ctaText: "가성비 최고 밸런스 모델 보기"
     },
     ENTRY_LEVEL: {
