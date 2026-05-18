@@ -2,7 +2,7 @@ export const airconDiagnosticData = {
   id: "family-aircon-audit-2026",
   title: "평수만 보면 백전백패! 우리 집 '인생 에어컨' 찾기",
   relatedPostUrl: "https://ranklamp.com/best-family-air-conditioner-buying-guide-2026/",
-  subTitle: "매번 에어컨 켤 때마다 싸우는 우리 가족을 위해! 5가지 초간단 질문으로 딱 맞는 에어컨 유형과 전기세 아끼는 살림 꿀팁을 배달해 드려요. 📦✨",
+  subTitle: "매번 에어컨 켤 때마다 싸우는 우리 가족을 위해! 5가지 초간단 질문으로 딱 맞는 에어컨 유형과 전기세 아끼는 살림 꿀팁을 배달해 드려요.",
   isReady: true,
   mainImg: "/images/airconMain.jpg",
   questions: [
