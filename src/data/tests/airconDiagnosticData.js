@@ -97,6 +97,14 @@ export const airconDiagnosticData = {
       affiliateLink: "https://link.coupang.com/a/dQ8yKjgeiG",
       ctaText: "소음 잡은 최신 창문형 에어컨 보기",
       tip: "💡 살림 꿀팁: 창문형 에어컨은 틈새 틈으로 바깥 열기가 들어오지 않도록 마감 패킹을 꼼꼼히 밀착시켜 주는 것이 냉방의 핵심!"
+    },
+    MULTI_ZONE_SYSTEM: {
+      name: "공간 효율 끝판왕 '시스템·멀티 멀티플렉서'",
+      img: "/images/resMultiZone.jpg",
+      desc: "방마다 더위 타는 기준이 다르고, 거실 바닥 자리를 차지하는 게 싫으시다면 천장형 시스템 에어컨이나 2in1~3in1 멀티형 에어컨이 답입니다! 각 방의 독립된 제어로 리모컨 싸움을 끝내고 공간 인테리어까지 깔끔하게 지킬 수 있습니다.",
+      affiliateLink: "https://link.coupang.com/a/dRXcItNWgu", // 임시 링크이니 필요시 수정해 주세요.
+      ctaText: "공간 절약형 멀티·시스템 에어컨 보기",
+      tip: "💡 살림 꿀팁: 여러 방의 에어컨을 동시에 가동할 때는 실외기실의 루버(환기창)를 완전히 열어두어야 과열로 인한 냉방 효율 저하를 막을 수 있습니다!"
     }
   }
 };
