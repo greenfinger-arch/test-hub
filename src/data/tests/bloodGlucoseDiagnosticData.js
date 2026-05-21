@@ -7,7 +7,7 @@ export const bloodGlucoseDiagnosticData = {
   mainImg: "/images/glucoseMain.jpg",
   questions: [
     {
-      q: "1. 혈당 측정기를 떠올렸을 때 가장 먼저 드는 '솔직한 생각'은?",
+      q: "혈당 측정기를 떠올렸을 때 가장 먼저 드는 '솔직한 생각'은?",
       img: "/images/glucoseQ1.jpg",
       a: [
         { text: "“아으, 따끔한 거 싫어!” 매번 손가락 끝 바늘로 찌르는 게 너무 두렵다", type: "CGM_TREND_SETTER" },
@@ -17,7 +17,7 @@ export const bloodGlucoseDiagnosticData = {
       ]
     },
     {
-      q: "2. 평소 식사 후 나의 '몸 상태나 일상 패턴'은 어떤가요?",
+      q: "평소 식사 후 나의 '몸 상태나 일상 패턴'은 어떤가요?",
       img: "/images/glucoseQ2.jpg",
       a: [
         { text: "점심만 먹고 나면 눈꺼풀이 천근만근, 정신 못 차릴 정도로 졸음이 쏟아짐", type: "DIET_WELLNESS" },
@@ -27,7 +27,7 @@ export const bloodGlucoseDiagnosticData = {
       ]
     },
     {
-      q: "3. 혈당 관리에서 가장 '번거롭다고 느끼는 부분'은 무엇인가요?",
+      q: "혈당 관리에서 가장 '번거롭다고 느끼는 부분'은 무엇인가요?",
       img: "/images/glucoseQ3.jpg",
       a: [
         { text: "매번 측정할 때마다 수첩에 날짜, 시간, 수치를 수기로 받아 적는 일", type: "PARENT_CARE_SMART" },
@@ -37,7 +37,7 @@ export const bloodGlucoseDiagnosticData = {
       ]
     },
     {
-      q: "4. 지갑 사정과 관련해 내가 감당할 수 있는 '유지비 기준'은?",
+      q: "지갑 사정과 관련해 내가 감당할 수 있는 '유지비 기준'은?",
       img: "/images/glucoseQ4.jpg",
       a: [
         { text: "처음 살 때 돈이 좀 들더라도 바늘 안 찌르고 실시간 확인되면 투자할 용향 있음", type: "CGM_TREND_SETTER" },
@@ -47,7 +47,7 @@ export const bloodGlucoseDiagnosticData = {
       ]
     },
     {
-      q: "5. 혈당 측정을 대하는 '나의 다짐이나 목표'는?",
+      q: "혈당 측정을 대하는 '나의 다짐이나 목표'는?",
       img: "/images/glucoseQ5.jpg",
       a: [
         { text: "공복 혈당 수치만 정기적으로 체크해서 건강 상태만 확인하겠다", type: "CLASSIC_ACCURACY" },
