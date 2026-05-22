@@ -7,7 +7,7 @@ export const treadmillDiagnosticData = {
   mainImg: "/images/treadmillMain.jpg",
   questions: [
     {
-      q: "1. 내가 러닝머신을 사려는 '진짜 솔직한 운동 목적'은?",
+      q: "내가 러닝머신을 사려는 '진짜 솔직한 운동 목적'은?",
       img: "/images/treadmillQ1.jpg",
       a: [
         { text: "식사 후 가볍게 걸으며 칼로리를 태우고 뉴스를 보거나 유튜브를 시청하겠다", type: "SLIM_WALKING" },
@@ -17,7 +17,7 @@ export const treadmillDiagnosticData = {
       ]
     },
     {
-      q: "2. 현재 내가 거주하고 있는 '주거 환경과 소음 상태'는?",
+      q: "현재 내가 거주하고 있는 '주거 환경과 소음 상태'는?",
       img: "/images/treadmillQ2.jpg",
       a: [
         { text: "조금만 쿵쾅거려도 경비실에서 바로 연락 오는 민감한 아파트나 빌라다", type: "SPACE_SAVER" },
@@ -27,7 +27,7 @@ export const treadmillDiagnosticData = {
       ]
     },
     {
-      q: "3. 러닝머신을 고를 때 내가 가장 '양보할 수 없는 기준'은?",
+      q: "러닝머신을 고를 때 내가 가장 '양보할 수 없는 기준'은?",
       img: "/images/treadmillQ3.jpg",
       a: [
         { text: "운동이 끝난 후 여성이나 어르신 혼자서도 힘들이지 않고 가볍게 접고 밀 수 있어야 한다", type: "SPACE_SAVER" },
@@ -37,7 +37,7 @@ export const treadmillDiagnosticData = {
       ]
     },
     {
-      q: "4. 기기 관리나 조작에 대한 나의 '솔직한 성향'은?",
+      q: "기기 관리나 조작에 대한 나의 '솔직한 성향'은?",
       img: "/images/treadmillQ4.jpg",
       a: [
         { text: "복잡한 계기판 기능은 딱 질색! 전원 켜고 속도 조절만 편하면 장땡이다", type: "SLIM_WALKING" },
@@ -47,7 +47,7 @@ export const treadmillDiagnosticData = {
       ]
     },
     {
-      q: "5. 구매 후 이 기구가 '옷걸이'가 되지 않기 위한 나의 다짐은?",
+      q: "구매 후 이 기구가 '옷걸이'가 되지 않기 위한 나의 다짐은?",
       img: "/images/treadmillQ5.jpg",
       a: [
         { text: "매일 아침 눈뜨자마자 거실에서 가볍게 15분씩 걷는 습관을 들이겠다", type: "SLIM_WALKING" },
