@@ -2,12 +2,12 @@ export const deviceStandDiagnosticData = {
   id: "digital-stand-audit-2026",
   title: "거북목 탈출 작전! 나에게 딱 맞는 인생 거치대 찾기",
   relatedPostUrl: "https://ranklamp.com/device-stands-selection-guide/",
-  subTitle: "내 목뼈가 감당하는 하중을 줄여줄 구원투수는 누구? 5가지 솔직한 질문으로 내 기기 환경에 딱 맞는 거치대와 손목·목 건강을 모두 지키는 치트키를 배달해 드려요. 📱💻👀✨",
+  subTitle: "내 목뼈가 감당하는 하중을 줄여줄 구원투수는 누구? 5가지 솔직한 질문으로 내 기기 환경에 딱 맞는 거치대와 손목·목 건강을 모두 지키는 치트키를 배달해 드려요.",
   isReady: true,
   mainImg: "/images/standMain.jpg",
   questions: [
     {
-      q: "1. 내가 거치대를 사려는 '가장 주된 장소와 목적'은?",
+      q: "내가 거치대를 사려는 '가장 주된 장소와 목적'은?",
       img: "/images/standQ1.jpg",
       a: [
         { text: "침대나 소파에 누워서 세상에서 가장 편한 자세로 유튜브와 OTT를 시청하겠다", type: "BED_BEDOUIN" },
@@ -17,7 +17,7 @@ export const deviceStandDiagnosticData = {
       ]
     },
     {
-      q: "2. 현재 쓰고 있는 '가장 메인 디바이스와 무게'는 어느 정도인가요?",
+      q: "현재 쓰고 있는 '가장 메인 디바이스와 무게'는 어느 정도인가요?",
       img: "/images/standQ2.jpg",
       a: [
         { text: "화면이 크고 묵직한 15인치 이상의 고중량 노트북(랩톱)", type: "DESK_WARRIOR" },
@@ -27,7 +27,7 @@ export const deviceStandDiagnosticData = {
       ]
     },
     {
-      q: "3. 거치대를 고를 때 내가 '절대 양보할 수 없는 디테일'은?",
+      q: "거치대를 고를 때 내가 '절대 양보할 수 없는 디테일'은?",
       img: "/images/standQ3.jpg",
       a: [
         { text: "고가의 기기가 미끄러지거나 흠집 나지 않도록 넓고 두꺼운 논슬립 실리콘 패드 마감", type: "CREATIVE_ARTIST" },
@@ -37,7 +37,7 @@ export const deviceStandDiagnosticData = {
       ]
     },
     {
-      q: "4. 나의 평소 '데스크 환경 및 기기 사용 습관'은 어떤가요?",
+      q: "나의 평소 '데스크 환경 및 기기 사용 습관'은 어떤가요?",
       img: "/images/standQ4.jpg",
       a: [
         { text: "노트북 바닥에서 올라오는 후끈한 발열을 제어해 줄 통풍 구조가 간절하다", type: "DESK_WARRIOR" },
@@ -47,7 +47,7 @@ export const deviceStandDiagnosticData = {
       ]
     },
     {
-      q: "5. 거치대를 영입하는 내 목과 손목을 향한 나의 다짐은?",
+      q: "거치대를 영입하는 내 목과 손목을 향한 나의 다짐은?",
       img: "/images/standQ5.jpg",
       a: [
         { text: "구부정한 어깨를 활짝 펴고 당당한 직장인의 바른 자세를 유지하겠다", type: "DESK_WARRIOR" },
