@@ -2,7 +2,7 @@ export const summerCoolerDiagnosticData = {
   id: "summer-cooler-audit-2026", // 기존 id와의 충돌을 원천 차단하기 위해 유니크하게 변경
   title: "역대급 폭염 생존 키트! 나에게 맞는 '인생 선풍기' 처방전",
   relatedPostUrl: "https://ranklamp.com/portable-fans-buying-guide/",
-  subTitle: "미지근한 바람은 이제 그만! 5가지 질문으로 내 활동 패턴과 소음 민감도를 정밀 분석해, 올여름 폭염을 통쾌하게 깨부술 하이테크 맞춤 선풍기를 처방해 드립니다. ☀️🍃🥶",
+  subTitle: "미지근한 바람은 이제 그만! 5가지 질문으로 내 활동 패턴과 소음 민감도를 정밀 분석해, 올여름 폭염을 통쾌하게 깨부술 하이테크 맞춤 선풍기를 처방해 드립니다.",
   isReady: true,
   mainImg: "/images/fanMain.jpg",
   questions: [
