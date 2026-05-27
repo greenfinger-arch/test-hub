@@ -7,7 +7,7 @@ export const summerCoolerDiagnosticData = {
   mainImg: "/images/fanMain.jpg",
   questions: [
     {
-      q: "1. 여름철 선풍기를 주로 사용하는 '나의 핵심 장소'는?",
+      q: "여름철 선풍기를 주로 사용하는 '나의 핵심 장소'는?",
       img: "/images/fanQ1.jpg",
       a: [
         { text: "만원 버스, 지하철 등 출퇴근길 대중교통 안에서 손에 쥐고 콤팩트하게 쓰겠다", type: "HANDY_MINIMAL" },
@@ -17,7 +17,7 @@ export const summerCoolerDiagnosticData = {
       ]
     },
     {
-      q: "2. 내가 선풍기 소리를 들었을 때 '참을 수 있는 소음 수준'은?",
+      q: "내가 선풍기 소리를 들었을 때 '참을 수 있는 소음 수준'은?",
       img: "/images/fanQ2.jpg",
       a: [
         { text: "주변 눈치가 보이기 때문에 시계 초침 소리 수준으로 무조건 조용해야 한다", type: "SILENT_DESK" },
@@ -27,7 +27,7 @@ export const summerCoolerDiagnosticData = {
       ]
     },
     {
-      q: "3. 선풍기를 고를 때 내가 '절대 포기할 수 없는 기능'은?",
+      q: "선풍기를 고를 때 내가 '절대 포기할 수 없는 기능'은?",
       img: "/images/fanQ3.jpg",
       a: [
         { text: "바람만 불면 미지근하다! 피부에 닿자마자 얼음찜질이 되는 급속 초냉각 패드", type: "PELTIER_ICEMAN" },
@@ -37,7 +37,7 @@ export const summerCoolerDiagnosticData = {
       ]
     },
     {
-      q: "4. 휴대용 선풍기를 쓰면서 '가장 짜증 났던 기억'은 어떤 건가요?",
+      q: "휴대용 선풍기를 쓰면서 '가장 짜증 났던 기억'은 어떤 건가요?",
       img: "/images/fanQ4.jpg",
       a: [
         { text: "몇 시간 쓰지도 않았는데 픽픽 꺼져버리는 조기 방전과 구형 5핀 충전 포트의 번거로움", type: "HANDY_MINIMAL" },
@@ -47,7 +47,7 @@ export const summerCoolerDiagnosticData = {
       ]
     },
     {
-      q: "5. 올여름 무더위를 대하는 나의 비장한 태도는?",
+      q: "올여름 무더위를 대하는 나의 비장한 태도는?",
       img: "/images/fanQ5.jpg",
       a: [
         { text: "트렌디한 하이테크 신기술로 폭염 속에서도 땀 한 방울 흘리지 않는 얼음 인간이 되겠다", type: "PELTIER_ICEMAN" },
