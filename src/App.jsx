@@ -116,6 +116,7 @@ import { bloodGlucoseDiagnosticData } from "./data/tests/bloodGlucoseDiagnosticD
 import { treadmillDiagnosticData } from "./data/tests/treadmillDiagnosticData.js";
 import { deviceStandDiagnosticData } from "./data/tests/deviceStandDiagnosticData.js";
 import { summerCoolerDiagnosticData } from "./data/tests/summerCoolerDiagnosticData.js";
+import { indoorBikeDiagnosticData } from "./data/tests/indoorBikeDiagnosticData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -241,6 +242,7 @@ const testRegistry = {
   treadmillDiagnosticData: treadmillDiagnosticData,
   deviceStandDiagnosticData: deviceStandDiagnosticData,
   summerCoolerDiagnosticData: summerCoolerDiagnosticData,
+  indoorBikeDiagnosticData: indoorBikeDiagnosticData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
