@@ -1,6 +1,6 @@
 export const indoorBikeDiagnosticData = {
   id: "indoor-bike-audit-2026", // 대시보드 내 고유 ID 세팅
-  title: "역대급 폭염 생존 키트! 나에게 맞는 '인생 선풍기' 처방전", // 기존 포맷 싱크 유지
+  title: "역대급 폭염 생존 키트! 나에게 맞는 '인생 자전거' 처방전", // 기존 포맷 싱크 유지
   relatedPostUrl: "https://ranklamp.com/indoor-cycling-buying-guide/",
   subTitle: "옷차림은 가벼워지는데 밖은 미세먼지와 불볕더위 가득! 5가지 질문으로 내 주거 환경, 운동 목적, 관절 상태를 정밀 분석해 방구석 옷걸이가 되지 않을 진짜 인생 실내 바이크를 처방해 드립니다.",
   isReady: true,
