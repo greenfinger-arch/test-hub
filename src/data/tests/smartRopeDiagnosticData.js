@@ -2,12 +2,12 @@ export const smartRopeDiagnosticData = {
   id: "smart-rope-audit-2026", // 다른 홈트 기구 모듈과 충돌 없는 고유 ID
   title: "아랫집 눈치 끝! 나에게 맞는 '인생 스마트 로프' 처방전",
   relatedPostUrl: "https://ranklamp.com/smart-rope-buying-guide/",
-  subTitle: "줄넘기가 전신 체지방 커팅에 최고인 건 알지만 층간소음 때문에 망설이셨나요? 5가지 질문으로 내 손목 관절 상태와 주거 환경에 딱 맞춰, 손목 터널 증후군 없이 스텔스 모드로 살을 빼줄 '진짜 스마트 로프'를 처방해 드립니다. ⚡🏃‍♂️👀✨",
+  subTitle: "줄넘기가 전신 체지방 커팅에 최고인 건 알지만 층간소음 때문에 망설이셨나요? 5가지 질문으로 내 손목 관절 상태와 주거 환경에 딱 맞춰, 손목 터널 증후군 없이 스텔스 모드로 살을 빼줄 '진짜 스마트 로프'를 처방해 드립니다.",
   isReady: true,
   mainImg: "/images/smartRopeMain.jpg",
   questions: [
     {
-      q: "1. 내가 집에서 무선 줄넘기를 돌릴 때 '가장 중요하게 생각하는 점'은?",
+      q: "내가 집에서 무선 줄넘기를 돌릴 때 '가장 중요하게 생각하는 점'은?",
       img: "/images/smartRopeQ1.jpg",
       a: [
         { text: "줄이 없더라도 진짜 줄넘기를 돌리는 듯한 묵직하고 리드미컬한 손맛(원심력)", type: "WEIGHTED_AIRBALL" },
@@ -17,7 +17,7 @@ export const smartRopeDiagnosticData = {
       ]
     },
     {
-      q: "2. 무선 줄넘기를 살 때 내가 '가장 걱정하는 실패 요인'은?",
+      q: "무선 줄넘기를 살 때 내가 '가장 걱정하는 실패 요인'은?",
       img: "/images/smartRopeQ2.jpg",
       a: [
         { text: "끝에 달린 하중구가 너무 가벼워서 허공에 헛손질하듯 리듬이 다 깨지는 것", type: "WEIGHTED_AIRBALL" },
@@ -27,7 +27,7 @@ export const smartRopeDiagnosticData = {
       ]
     },
     {
-      q: "3. 나의 현재 '손목 및 관절 건강 상태'는 어떤가요?",
+      q: "나의 현재 '손목 및 관절 건강 상태'는 어떤가요?",
       img: "/images/smartRopeQ3.jpg",
       a: [
         { text: "컴퓨터나 스마트폰 사용이 많아 손목 터널 증후군 기가 있어서 마찰 저항이 제로여야 한다", type: "HIGH_SPEED_BEARING" },
@@ -37,7 +37,7 @@ export const smartRopeDiagnosticData = {
       ]
     },
     {
-      q: "4. 내가 선호하는 홈트레이닝의 '디지털 스마트 스타일'은?",
+      q: "내가 선호하는 홈트레이닝의 '디지털 스마트 스타일'은?",
       img: "/images/smartRopeQ4.jpg",
       a: [
         { text: "6축 모션 센서가 내 점프 각도까지 정밀 분석해 전 세계 유저와 실시간 랭킹전을 치르는 스타일", type: "SIX_AXIS_SMART" },
@@ -47,7 +47,7 @@ export const smartRopeDiagnosticData = {
       ]
     },
     {
-      q: "5. 이번 다이어트 챌린지를 임하는 나의 각오는?",
+      q: "이번 다이어트 챌린지를 임하는 나의 각오는?",
       img: "/images/smartRopeQ5.jpg",
       a: [
         { text: "시간당 칼로리 소비 효율 끝판왕인 줄넘기로 체지방을 가차 없이 폭격해 버리겠다", type: "WEIGHTED_AIRBALL" },
