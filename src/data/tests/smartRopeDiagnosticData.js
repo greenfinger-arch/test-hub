@@ -1,6 +1,6 @@
 export const smartRopeDiagnosticData = {
   id: "smart-rope-audit-2026", // 다른 홈트 기구 모듈과 충돌 없는 고유 ID
-  title: "아랫집 눈치 끝! 나에게 맞는 '인생 스마트 로프' 처방전",
+  title: "아랫집 눈치 끝! 나에게 맞는 '인생 스마트 줄넘기' 처방전",
   relatedPostUrl: "https://ranklamp.com/smart-rope-buying-guide/",
   subTitle: "줄넘기가 전신 체지방 커팅에 최고인 건 알지만 층간소음 때문에 망설이셨나요? 5가지 질문으로 내 손목 관절 상태와 주거 환경에 딱 맞춰, 손목 터널 증후군 없이 스텔스 모드로 살을 빼줄 '진짜 스마트 로프'를 처방해 드립니다.",
   isReady: true,
