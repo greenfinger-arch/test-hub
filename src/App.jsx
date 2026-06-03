@@ -123,6 +123,7 @@ import { smartSliderDiagnosticData } from "./data/tests/smartSliderDiagnosticDat
 import { realisticMedBallDiagnosticData } from "./data/tests/realisticMedBallDiagnosticData.js";
 import { realisticPullupBarDiagnosticData } from "./data/tests/realisticPullupBarDiagnosticData.js";
 import { realisticEllipticalDiagnosticData } from "./data/tests/realisticEllipticalDiagnosticData.js";
+import { realisticStairmasterDiagnosticData } from "./data/tests/realisticStairmasterDiagnosticData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -255,6 +256,7 @@ const testRegistry = {
   realisticMedBallDiagnosticData: realisticMedBallDiagnosticData,
   realisticPullupBarDiagnosticData: realisticPullupBarDiagnosticData,
   realisticEllipticalDiagnosticData: realisticEllipticalDiagnosticData,
+  realisticStairmasterDiagnosticData: realisticStairmasterDiagnosticData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
