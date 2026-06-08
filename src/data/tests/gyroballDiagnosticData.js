@@ -2,7 +2,7 @@ export const gyroballDiagnosticData = {
   id: "gyroball-burning-2026", // 기존 모듈들과의 충돌을 원천 차단하는 유니크 ID
   title: "마우스 족의 구원자! 내 손목을 살릴 '악마의 자이로볼' 맞춤 처방전",
   relatedPostUrl: "https://ranklamp.com/gyroball-wrist-workout-guide/",
-  subTitle: "하루 종일 마우스 클릭질과 스마트폰 스크롤로 시큰거리는 내 불쌍한 손목... 핑계 대고 쉬자니 전완근이 울고, 아령을 들자니 찌릿한 수직 충격이 두려우신가요? 🤫 전기 없이 내 손목 속도만으로 최대 20kg 덤벨 괴력을 뿜어내는 자이로스코프의 세계로 초대합니다. 내 손목 컨디션에 딱 맞는 인생 자이로볼 스펙을 유쾌하게 처방해 드립니다!",
+  subTitle: "하루 종일 마우스 클릭질과 스마트폰 스크롤로 시큰거리는 내 불쌍한 손목... 핑계 대고 쉬자니 전완근이 울고, 아령을 들자니 찌릿한 수직 충격이 두려우신가요? 전기 없이 내 손목 속도만으로 최대 20kg 덤벨 괴력을 뿜어내는 자이로스코프의 세계로 초대합니다. 내 손목 컨디션에 딱 맞는 인생 자이로볼 스펙을 유쾌하게 처방해 드립니다!",
   isReady: true,
   mainImg: "/images/gyroballMainDiagnostic.jpg",
   
