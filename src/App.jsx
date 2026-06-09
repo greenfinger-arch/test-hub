@@ -127,6 +127,7 @@ import { realisticStairmasterDiagnosticData } from "./data/tests/realisticStairm
 import { realisticRowingDiagnosticData } from "./data/tests/realisticRowingDiagnosticData.js";
 import { realisticPadDiagnosticData } from "./data/tests/realisticPadDiagnosticData.js";
 import { gyroballDiagnosticData } from "./data/tests/gyroballDiagnosticData.js";
+import { realisticHoopDiagnosticData } from "./data/tests/realisticHoopDiagnosticData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -263,6 +264,7 @@ const testRegistry = {
   realisticRowingDiagnosticData: realisticRowingDiagnosticData,
   realisticPadDiagnosticData: realisticPadDiagnosticData,
   gyroballDiagnosticData: gyroballDiagnosticData,
+  realisticHoopDiagnosticData: realisticHoopDiagnosticData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
